@@ -4,56 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.15/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
    
     <title>Flag Memory Game</title>
 </head>
 <body>
-    <header class="container">
-      <h1>Flag Memory Game</h1>
-    </header>
+    <h1 class="heading">Flag Memory Game</h1>
+    <div class="game-container">
+        <div class="game-score-container">
+          <div class="game-score">
+            Time <span id="time-taken">0</span>
+          </div>
+          <div class="game-info">
+            Steps <span id="steps-taken">0</span>
+          </div>
+    </div>
       <section class="memory-game">
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card A">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
+        <div class="memory-card" data-framework="card-a">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Card A">
+          <img class="front-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
         </div>
       
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card B">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
+        <div class="memory-card" data-framework="card-a">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Cars A">
+          <img class="front-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
         </div>
       
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card C">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png"alt="Flag Card">
+        <div class="memory-card" data-framework="card-b">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Card B">
+          <img class="front-face" src="https://www.countryflags.io/nz/flat/64.png"alt="Flag Card">
         </div>
       
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card D">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
+        <div class="memory-card" data-framework="card-b">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Card B">
+          <img class="front-face" src="https://www.countryflags.io/nz/flat/64.png" alt="Flag Card">
         </div>
       
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card E">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
+        <div class="memory-card" data-framework="card-c">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Card C">
+          <img class="front-face" src="https://www.countryflags.io/dk/flat/64.png" alt="Flag Card">
         </div>
       
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card F">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
+        <div class="memory-card" data-framework="card-c">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Card C">
+          <img class="front-face" src="https://www.countryflags.io/dk/flat/64.png" alt="Flag Card">
         </div>
       
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card G">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
+        <div class="memory-card" data-framework="card-d">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Card D">
+          <img class="front-face" src="https://www.countryflags.io/gh/flat/64.png" alt="Flag Card">
         </div>
       
-        <div class="memory-card">
-          <img class="front-face" src="assets/imgages/compass.jpg" alt="Card H">
-          <img class="back-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
+        <div class="memory-card" data-framework="card-d">
+          <img class="back-face" src="assets/images/compass.jpg" alt="Card D">
+          <img class="front-face" src="https://www.countryflags.io/gh/flat/64.png" alt="Flag Card">
         </div>
+
+        <div class="memory-card" data-framework="card-e">
+            <img class="back-face" src="assets/images/compass.jpg" alt="Card E">
+            <img class="front-face" src="https://www.countryflags.io/ie/flat/64.png" alt="Flag Card">
+          </div>
+
+        <div class="memory-card" data-framework="card-e">
+            <img class="back-face" src="assets/images/compass.jpg" alt="Card E">
+            <img class="front-face" src="https://www.countryflags.io/ie/flat/64.png" alt="Flag Card">
+          </div>
+        <div class="memory-card" data-framework="card-f">
+            <img class="back-face" src="assets/images/compass.jpg" alt="Card F">
+            <img class="front-face" src="https://www.countryflags.io/ps/flat/64.png" alt="Flag Card">
+          </div>
+        <div class="memory-card" data-framework="card-f">
+            <img class="back-face" src="assets/images/compass.jpg" alt="Card F">
+            <img class="front-face" src="https://www.countryflags.io/ps/flat/64.png" alt="Flag Card">
+          </div>
       </section>
       <footer>
         <i class="fab fa-github-square"></i>
