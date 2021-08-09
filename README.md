@@ -1,12 +1,12 @@
-# Personal Resume of Aneesa Khan
+# Flag Memory Game
 
-![My Resume](/assets/images/responsive-design.png)\
+![Flag Memory Game](/assets/images/responsive-design-ms2.png)\
 
-**Live Page**: https://anee127.github.io/Milestone-Project-1/
+**Live Page**: https://anee127.github.io/Milestone-Project-2/
 
-**This Resume is part of the first Milestone Project carried out through the Code Institute.**
+**This game is part of the second Milestone Project carried out through the Code Institute.**
 
-This website showcases my skills and experience as a personal resume website. It includes some features about me as well as my details and CV to appeal to potential recruiter/employers. The website itself is an example of my skills and I have provided contact input for users who would like to get in touch.
+This webpage was created to launch a simple memory card game that people of all ages can play. The purpose it to match pairs of cards together with the same country’s flag design. The website itself is an example of my skills in HTML, CSS and JavaScript. There is a link to the GitHub repository, in the footer, for users who wish to see the code behind the webpage.
 
 ## <u>Table of Contents</u>
 [**User Experience (UX)**](#user-experience-ux)
