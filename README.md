@@ -52,6 +52,9 @@ Source: [Coolors](https://coolors.co/879397-89aad2-f36874-fdfffc-fffad7)
 
 **Images**
 
+### Wireframes
+[Wireframes link] (assets/pdf/MSP2-wireframes.pdf)
+
 ## **Features**
 ### Existing Features
 **Header**
