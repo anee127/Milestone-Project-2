@@ -38,21 +38,32 @@ This webpage was created to launch a simple memory card game that people of all 
 ## **User Experience (UX)**
 ### Purpose
  
-
+The second milestone project idea is to create a memory game webpage for users of all ages that can play. With the use of flag images to also help users recognise each country’s flags so that they may also learn the different patterns and colours of the flags.
 ### User Stories
-1.	 
+
+1.	As a user of a recruiter, I should be able to easily navigate through the webpage to start, restart or change levels for the game.
+2.	As a user of a recruiter, I should be able to use the website on any device without problem. 
+3.	As a user of a recruiter, I should be able to flip the card over by clicking on each card once only, if the cards do not match, they should flip back over automatically.
+4.	As a user of a recruiter, I should be able to check the time and number of turns taken to match all cards.
+5.	As a user of a recruiter, I should be able see all elements on the page clearly.
+6.	As a user of a recruiter, I should be able to find the original code for the website through a link to GitHub.
+
 ### Design
 **Structure**
--	 
+-	 I opted for a simple webpage design structure with a single title and footer, with relevant images for the front face and back face of the cards. I opted for a historical style colour scheme to make the flags stand out more.  
 **Colour Scheme**
--	
+-	A neutral, washed-out colour scheme in contrast to black and white text to make the buttons and scoring stand out. 
+-	The key colours being white, beige, brown and black.
+-	The colours used will tie in with the colours of the back-face cards to keep the scheme throughout the website.
+
 ![Colour Scheme](assets/ColourScheme.png)
 Source: [Coolors](https://coolors.co/879397-89aad2-f36874-fdfffc-fffad7)
 **Typography**
 
 **Images**
-
+A relevant image was used for the back-face of the cards. An old compass design drawn on top of a vintage map. The flag images were taken from a website called [Country Flags API] (https://www.countryflags.io) to insert the flags API into the code so that it would show up on the card front-faces. 
 ### Wireframes
+At the start of the project, I designed the wireframes using Balsamiq. These initial designs made it easier to plan the overal design and structure of the webpage. 
 [Wireframes link] (assets/pdf/MSP2-wireframes.pdf)
 
 ## **Features**
