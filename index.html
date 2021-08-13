@@ -4,88 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.15/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
    
     <title>Flag Memory Game</title>
 </head>
 <body>
-    <h1 class="heading">Flag Memory Game</h1>
-    <div class="game-container">
+<!--Heading-->
+      <h1 class="heading">Flag Memory Game</h1>
+<!--Game score Area-->
+    <section class="game-container">
         <div class="game-score-container">
-          <div class="game-score">
+          <div onclick="flipcard()" class="game-score">
             Time <span id="time-taken">0</span>
           </div>
-          <div class="game-info">
+          <div class="game-score">
             Steps <span id="steps-taken">0</span>
           </div>
-    </div>
-      <section class="memory-game">
-        <div class="memory-card" data-framework="card-a">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Card A">
-          <img class="front-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
-        </div>
-      
-        <div class="memory-card" data-framework="card-a">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Cars A">
-          <img class="front-face" src="https://www.countryflags.io/be/flat/64.png" alt="Flag Card">
-        </div>
-      
-        <div class="memory-card" data-framework="card-b">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Card B">
-          <img class="front-face" src="https://www.countryflags.io/nz/flat/64.png"alt="Flag Card">
-        </div>
-      
-        <div class="memory-card" data-framework="card-b">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Card B">
-          <img class="front-face" src="https://www.countryflags.io/nz/flat/64.png" alt="Flag Card">
-        </div>
-      
-        <div class="memory-card" data-framework="card-c">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Card C">
-          <img class="front-face" src="https://www.countryflags.io/dk/flat/64.png" alt="Flag Card">
-        </div>
-      
-        <div class="memory-card" data-framework="card-c">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Card C">
-          <img class="front-face" src="https://www.countryflags.io/dk/flat/64.png" alt="Flag Card">
-        </div>
-      
-        <div class="memory-card" data-framework="card-d">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Card D">
-          <img class="front-face" src="https://www.countryflags.io/gh/flat/64.png" alt="Flag Card">
-        </div>
-      
-        <div class="memory-card" data-framework="card-d">
-          <img class="back-face" src="assets/images/compass.jpg" alt="Card D">
-          <img class="front-face" src="https://www.countryflags.io/gh/flat/64.png" alt="Flag Card">
-        </div>
-
-        <div class="memory-card" data-framework="card-e">
-            <img class="back-face" src="assets/images/compass.jpg" alt="Card E">
-            <img class="front-face" src="https://www.countryflags.io/ie/flat/64.png" alt="Flag Card">
-          </div>
-
-        <div class="memory-card" data-framework="card-e">
-            <img class="back-face" src="assets/images/compass.jpg" alt="Card E">
-            <img class="front-face" src="https://www.countryflags.io/ie/flat/64.png" alt="Flag Card">
-          </div>
-        <div class="memory-card" data-framework="card-f">
-            <img class="back-face" src="assets/images/compass.jpg" alt="Card F">
-            <img class="front-face" src="https://www.countryflags.io/ps/flat/64.png" alt="Flag Card">
-          </div>
-        <div class="memory-card" data-framework="card-f">
-            <img class="back-face" src="assets/images/compass.jpg" alt="Card F">
-            <img class="front-face" src="https://www.countryflags.io/ps/flat/64.png" alt="Flag Card">
-          </div>
-      </section>
+      </div>    
+<!--memory game Area-->
+      <div></div>
+    </section>
+<!--rules and Reset buttons-->
+      <div>
+        <button class="hero-btn" onclick="reset()">Reset Game</button> 
+        <button id="modalBtn" class="hero-btn">How to Play</button>
+      </div>   
+<!--rules card-->
+          <div class="rules" id="rules">
+            <h3 class="modal-title">How To Play</h3>
+            <div class="text">This is a flag memory game by matching cards. There are two difficulty levels, easy and hard. To play simply click a pair of cards to flip them over. If they match they will stay face up, if they unmatch they will flip back over. The aim of the game to to find all matching pairs of flags. You can restart the game at anytime.<span class="bold">Enjoy!</span></div>
+            <div class="modal-button">
+              <button id="closeBtn" class="close-btn">Close</button>
+            </div>
+            </div>  fhreuibgrgb
+<!--footer-->
       <footer>
         <i class="fab fa-github-square"></i>
         <h6><i class="far fa-copyright"></i>Flag Memory Game 2021</h6>
       </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
