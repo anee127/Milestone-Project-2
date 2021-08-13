@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&family=Zilla+Slab+Highlight:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smythe&');
 
 * {
   margin: 0;
@@ -7,80 +7,91 @@
 }
 
 body {
-    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
     display: flex;
     background: beige;
   }
 
+  /* Heading area*/
+
 .heading {
-  font-family: 'Open',sans-serif;
-  font-weight: normal;
+  font-family: 'Smythe',sans-serif;
+  font-weight: 20px;
   text-align: center;
   display: flex;
+  position: relative;
   color: rgb(104, 50, 50);
 }  
 
-.game-score-container {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
+/* footer area*/
+
+footer {
+  text-align: center;
+  font-size: 40px;
+  position: sticky;
+  font-family: 'Smythe',sans-serif;
+  color: brown;
 }
 
-.game-score {
+
+ /* Reset Game css*/
+
+ .hero-btn {
+  display: inline-block;
   color: #624632;
-}
-
-.memory-game {
-  width: 640px;
-  height: 640px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid grey;
-  perspective: 1000px;
-}
-
-.memory-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
+  border: 1px solid #624632;
+  padding: 12px 34px;
+  font-size: 14px;
+  background: #f1c9af;
   position: relative;
-  margin: 5px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  transform: scale(1);
-  transform-style: preserve-3d;
-  transition: transform .5s;
+  transition: 1s;
 }
 
-.memory-card:active {
-  transform: scale(0.97);
-  transition: transform .2s;
-}
-.memory-card.flip {
-  transform: rotateY(180deg);
-}
-
-.front-face, .back-face {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  position: absolute;
-  border-radius: 5px;
-  background-color: grey;
-  backface-visibility: hidden;
+.hero-btn:hover {
+  border: 1px solid #ffcbcb;
+  background: #ffcbcb;
+  color: #000000;
+  transition: 1s;
 }
 
-.front-face {
-  transform: rotateY(180deg);
-}
+ /* How to Play Rules*/
+ 
+ .rules {
+   display: none;
+   margin: 100px, 200px, 100px, 200px;
+   position: fixed;
+   z-index: 99;
+   left: 0;
+   top: 0;
+   font-family: 'Smythe', sans-serif;
+   border: 0.2em solid ;
+   border-radius: 20px;
+   justify-content: center;
+   background-color: antiquewhite;
+ }
+
+ .modal-title {
+   font-size: 50px;
+   justify-content: center;
+ }
+
+ .text {
+   color: #624632;
+   text-align: center;
+   font-size: 40px;
+ }
+
+ .close-btn {
+   margin: 5px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: #624632;
+   color: #fff;
+   font-size: 40px;
+   justify-content: center;
+ }
 
 
-  img {
-    width: 100px;
-  }
 
-  footer {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Open',sans-serif;
-    color: brown;
-  }
