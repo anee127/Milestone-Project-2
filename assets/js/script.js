@@ -40,3 +40,28 @@ function writeToDocument(type) {
 }
 
 getData(printDataToConsole);
+
+const timer = document.getElementById("timeTaken");
+
+var time;
+var seconds = 0
+var minutes = 0;
+var startTimer = false;
+timeContainer.innerHTML = "Time:" + minutes + ":" + seconds;
+
+
+//timer functions 
+function startTimer() {
+  time = setInterval(function() {
+    seconds++;
+    if(second === 59){
+      minutes++;
+      seconds = 0;
+    }
+    timeContainer.innerHTML = "Time:" + minutes + ":" + seconds;
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(time);
+}
