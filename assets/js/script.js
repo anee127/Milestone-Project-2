@@ -15,3 +15,28 @@ function showRules() {
 function closeRules() {
   rules.style.display = "none";
 }
+
+//accessing flag images api
+
+const baseURL = "https://flagcdn.com/en/codes.json";
+
+function getData(type, callback) {
+  var xhr = new XMLHttpRequest();
+
+  xhr.open("GET", baseURL + type);
+  xhr.send();
+
+  xhr.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      callback(JSON.parse(this.responseText));
+    }
+  };
+}     
+
+function writeToDocument(type) {
+  getData(type, function(data) {
+    document.getElementById("data").innerHTML = data;
+  });
+}
+
+getData(printDataToConsole);
