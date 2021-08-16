@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Smythe&');
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background: beige;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   background: beige;
   }
 
   /* Heading area*/
