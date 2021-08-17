@@ -18,28 +18,59 @@ function closeRules() {
 
 //accessing flag images api
 
-const baseURL = "https://flagcdn.com/en/codes.json";
+var countriesURL = "https://flagcdn.com/en/codes.json";
 
-function getData(type, callback) {
-  var xhr = new XMLHttpRequest();
-
-  xhr.open("GET", baseURL + type);
-  xhr.send();
-
-  xhr.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      callback(JSON.parse(this.responseText));
-    }
-  };
-}     
-
-function writeToDocument(type) {
-  getData(type, function(data) {
-    document.getElementById("data").innerHTML = data;
-  });
+function getData(url) {
+  return fetch(url)
+  .then(response => response.json())
+  .then(data => renderCards(data));
 }
 
-getData(printDataToConsole);
+//rendering flag images api onto the cards 
+
+const countryDiv = document.getElementById('cards');
+
+const renderCards = (countries) => {
+  console.log(countries);
+  const countriesArray = Object.keys(countries).filter(code => countries[code].length);
+  let flagCards = '';
+
+  Object.keys(countriesArray).map(flags => {
+    return flagCards = `${flagCards} <img src="https://flagcdn.com/h20/${countriesArray[flags]}.png">`;
+  });
+
+  countryDiv.innerHTML = flagCards;
+}
+
+getData(countriesURL);
+
+
+
+
+// //accessing flag images api
+
+// const baseURL = "https://flagcdn.com/en/codes.json";
+
+// function getData(type, callback) {
+//   var xhr = new XMLHttpRequest();
+
+//   xhr.open("GET", baseURL + type);
+//   xhr.send();
+
+//   xhr.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//       callback(JSON.parse(this.responseText));
+//     }
+//   };
+// }     
+
+// function writeToDocument(type) {
+//   getData(type, function(data) {
+//     document.getElementById("data").innerHTML = data;
+//   });
+// }
+
+// getData(printDataToConsole);
 
 const timer = document.getElementById("timeTaken");
 
