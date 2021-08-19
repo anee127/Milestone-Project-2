@@ -16,36 +16,49 @@
   <h1 class="heading">Flag Memory Game</h1>
 </header>
 <!--Game score Area-->
-    <section class="game-container">
-        <div class="game-score-container">
-          <div onclick="flipcard()" class="game-score">
-            Time <span id="time-taken">0</span>
-          </div>
-          <div class="game-score">
-            Steps <span id="steps-taken">0</span>
-          </div>
-      </div>    
-<!--memory game Area-->
-      <div></div>
-    </section>
-<!--rules and Reset buttons-->
-      <div>
-        <button class="hero-btn" onclick="reset()">Reset Game</button> 
-        <button id="modalBtn" class="hero-btn">How to Play</button>
-      </div>   
+<div class="game-container">
+  <div class="d-inline-block game-area">
+    <p>
+    <span class="game-info" id="timeTaken">Time: 0:00</span>
+    <span class="game-info" id="steps">Steps: 0</span>
+    </p>
+</div> 
+</div>
+ <!--memory game Area-->
+  <div class="card-area" id="cards"></div>
+</div>
+<div>
+  <button class="hero-btn" id="resetBtn">Reset Game</button> 
+  <button id="modalBtn" class="hero-btn">How to Play</button>
+</div>   
 <!--rules card-->
-          <div class="rules" id="rules">
-            <h3 class="modal-title">How To Play</h3>
-            <div class="text">This is a flag memory game by matching cards. There are two difficulty levels, easy and hard. To play simply click a pair of cards to flip them over. If they match they will stay face up, if they unmatch they will flip back over. The aim of the game to to find all matching pairs of flags. You can restart the game at anytime.<span class="bold">Enjoy!</span></div>
-            <div class="modal-button">
-              <button id="closeBtn" class="close-btn">Close</button>
-            </div>
-            </div>  fhreuibgrgb
+    <div class="rules" id="rules">
+      <h3 class="modal-title">How To Play</h3>
+      <div class="text">This is a flag memory game by matching cards. There are two difficulty levels, easy and hard. To play simply click a pair of cards to flip them over. If they match they will stay face up, if they unmatch they will flip back over. The aim of the game to to find all matching pairs of flags. You can restart the game at anytime.<span class="bold">Enjoy!</span></div>
+      <div class="modal-button">
+        <button id="closeBtn" class="close-btn">Close</button>
+      </div>
+      </div>  
+    <!--modal with game end message and results-->
+    <div class="modal-end" id="EndGame">
+      <h3 class="modal-header">Congratulations!</h3>
+      <div class="message">
+        You have successfully matched all the flags in <span class="results" id="timerResult"></span> and in <span class="results" id="stepsResults"></span><br />
+        <br />
+        Well Done!
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="restartBtn" class="btn restart-btn">Play Again</button>
+      </div> 
+      </div>  
 <!--footer-->
-      <footer class="container-fluid">
-        <i class="fab fa-github-square"></i>
-        <h6><i class="far fa-copyright"></i>Flag Memory Game 2021</h6>
-      </footer>
+<footer class="container-fluid">
+  <div>
+  <a href="https://github.com/anee127/Milestone-Project-2" target="_blank"></a>
+  <i class="fab fa-github-square" aria-hidden="true"></i>
+  </div>
+  <h3><i class="far fa-copyright"></i>Flag Memory Game 2021</h3>
+</footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
