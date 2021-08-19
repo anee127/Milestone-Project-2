@@ -34,8 +34,22 @@ footer {
   color: brown;
 }
 
+/*Game area*/
 
- /* Reset Game css*/
+.game-container {
+  margin-top: 40px;
+}
+
+.game-info {
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid #30150B;
+  background-color: #e0b081;
+  color: #30150B;
+}
+
+ /* Restart and how to play button css*/
 
  .hero-btn {
   display: inline-block;
@@ -91,11 +105,6 @@ footer {
    font-size: 30px;
    justify-content: center;
  }
-
-.card-area {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 /*Styling game cards*/
 
