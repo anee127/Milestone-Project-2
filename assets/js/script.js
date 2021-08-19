@@ -74,6 +74,63 @@ function shuffleArray(array) {
   }
 }
 
+// flippping over the cards to match
+function onCardClick(event) {
+  
+  console.log(event.target);
+  let image = document.getElementById("image-" + event.target.id);
+  image.classList.toggle("card-image-hidden");
+  image.classList.toggle("disabled");
+
+  
+  cardOpen(image);
+}
+
+function cardOpen(image) {
+
+  openCards.push(image);
+
+  if (openCards.length===2) {
+    console.log(openCards);
+    if (openCards[0].src === openCards[1].src) {
+      matched();
+    }
+    else {
+      unmatched();
+    }
+  }
+  //count steps for number of times cards clicked
+ 
+}
+
+// function () {
+// if (flips == 0) {
+//   startTimer();
+// }
+// if (openCards < 2) {
+//   flips = flips + 1;
+//   Steps.innerHTML ="Steps:" + flips;
+// }
+// }
+
+function matched() {
+  console.log("matched");
+  openCards = [];
+}
+
+function unmatched() {
+  let firstCard = openCards[0];
+  let secondCard = openCards[1];
+  openCards = [];
+  setTimeout(function(){
+    console.log("unmatched");
+    firstCard.classList.toggle("card-image-hidden");
+    secondCard.classList.toggle("card-image-hidden");
+    firstCard.classList.toggle("disabled");
+    secondCard.classList.toggle("disabled");
+  },1000)
+}
+
 const timer = document.getElementById("timeTaken");
 
 var time;
