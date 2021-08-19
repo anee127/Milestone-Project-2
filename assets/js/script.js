@@ -63,33 +63,16 @@ const renderCards = (countries) => {
 }
 getData(countriesURL);
 
+// shuffling flags on cards
 
-
-
-// //accessing flag images api
-
-// const baseURL = "https://flagcdn.com/en/codes.json";
-
-// function getData(type, callback) {
-//   var xhr = new XMLHttpRequest();
-
-//   xhr.open("GET", baseURL + type);
-//   xhr.send();
-
-//   xhr.onreadystatechange = function () {
-//     if (this.readyState == 4 && this.status == 200) {
-//       callback(JSON.parse(this.responseText));
-//     }
-//   };
-// }     
-
-// function writeToDocument(type) {
-//   getData(type, function(data) {
-//     document.getElementById("data").innerHTML = data;
-//   });
-// }
-
-// getData(printDataToConsole);
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+  }
+}
 
 const timer = document.getElementById("timeTaken");
 
