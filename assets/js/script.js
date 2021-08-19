@@ -49,20 +49,18 @@ function getData(url) {
 
 //rendering flag images api onto the cards 
 
-const countryDiv = document.getElementById('cards');
-
 const renderCards = (countries) => {
   console.log(countries);
-  const countriesArray = Object.keys(countries).filter(code => countries[code].length);
+  const countriesArray = [...Object.keys(countries).slice(0, 8), ...Object.keys(countries).slice(0, 8)];
+  shuffleArray(countriesArray);
   let flagCards = '';
 
   Object.keys(countriesArray).map(flags => {
-    return flagCards = `${flagCards} <img src="https://flagcdn.com/h20/${countriesArray[flags]}.png">`;
+    return flagCards = `${flagCards} <div onclick = "onCardClick(event)" class="card" id="${flags}"><img class="card-image-hidden" id="image-${flags}" src="https://flagcdn.com/h120/${countriesArray[flags]}.png"/></div>`;
   });
 
   countryDiv.innerHTML = flagCards;
 }
-
 getData(countriesURL);
 
 
