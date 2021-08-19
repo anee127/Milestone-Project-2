@@ -24,6 +24,19 @@ function closeRules() {
   rules.style.display = "none";
 }
 
+//to close box with
+function closeRules() {
+  rules.style.display = "none";
+}
+
+//ending modal events
+restartBtn.addEventListener('click', closeModal);
+
+// to close ending modal 
+function closeModal() {
+  endGame.style.display = "none";
+}
+
 //accessing flag images api
 
 var countriesURL = "https://flagcdn.com/en/codes.json";
