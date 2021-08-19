@@ -99,21 +99,37 @@ footer {
 
 /*Styling game cards*/
 
-.front-side.card-side {
+.card-area {
+  max-width: 50rem;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 1000px;
+  
+}
+
+.card-image-hidden {
   display: none;
 }
 
-.card-side {
-  display: inline-block;
+.card {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #30150B;
+  background-image: url(assets/images/compass-square.jpg);
 }
 
-.card-side > img {
-  object-fit: cover;
+.disabled {
+  pointer-events: none;
 }
 
 img {
-  border:#624632;
+  object-fit: cover;
+  margin-top: 0.8rem;
 }
+
 
 /*end game modal message css*/
 .modal-end {
