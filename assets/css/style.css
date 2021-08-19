@@ -115,5 +115,41 @@ img {
   border:#624632;
 }
 
+/*end game modal message css*/
+.modal-end {
+  display: none;
+  margin: 100px, 200px, 100px, 200px;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  font-family: 'Smythe', sans-serif;
+  border: 0.2em solid ;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.modal-header {
+  font-size: 40px;
+  justify-content: center;
+}
+
+.message {
+  color: #624632;
+  text-align: center;
+  font-size: 30px;
+}
+
+.restart-btn {
+  margin: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #E2C6AA;
+  color: #fff;
+  font-size: 30px;
+  justify-content: center;
+}
+
 
 /*media css*/
