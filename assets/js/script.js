@@ -2,6 +2,14 @@
 const rules = document.getElementById('rules');
 const modalBtn = document.getElementById('modalBtn');
 const closeBtn = document.getElementById('closeBtn');
+const endGame = document.getElementById('endGame');
+const restartBtn = document.getElementById('restartBtn');
+const resetBtn = document.getElementById('resetBtn');
+const countryDiv = document.getElementById('cards');
+var openedCardCount = 0;
+var openCards = [];
+var flips = 0;
+var amount = 0;
 
 modalBtn.addEventListener('click', showRules); //opens popup for rules card
 closeBtn.addEventListener('click', closeRules); //closes popup for rules card
