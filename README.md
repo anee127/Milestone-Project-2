@@ -6,7 +6,7 @@
 
 **This game is part of the second Milestone Project carried out through the Code Institute.**
 
-This webpage was created to launch a simple memory card game that people of all ages can play. The purpose it to match pairs of cards together with the same country’s flag design. The website itself is an example of my skills in HTML, CSS and JavaScript. There is a link to the GitHub repository, in the footer, for users who wish to see the code behind the webpage.
+This webpage was created to launch a simple memory card game that people of all ages can play. The purpose it to match pairs of cards together with the same country’s flag design. The website itself is an example of my skills in HTML, CSS and JavaScript. 
 
 ## <u>Table of Contents</u>
 [**User Experience (UX)**](#user-experience-ux)
@@ -37,50 +37,52 @@ This webpage was created to launch a simple memory card game that people of all 
 
 ## **User Experience (UX)**
 ### Purpose
- 
-The second milestone project idea is to create a memory game webpage for users of all ages that can play. With the use of flag images to also help users recognise each country’s flags so that they may also learn the different patterns and colours of the flags.
+The second milestone project idea is to create a memory game webpage for users of all ages to play. With the use of flag images to help users learn the different patterns and colours of flags.
+
 ### User Stories
-
-1.	As a user of a recruiter, I should be able to easily navigate through the webpage to start, restart or change levels for the game.
-2.	As a user of a recruiter, I should be able to use the website on any device without problem. 
-3.	As a user of a recruiter, I should be able to flip the card over by clicking on each card once only, if the cards do not match, they should flip back over automatically.
-4.	As a user of a recruiter, I should be able to check the time and number of turns taken to match all cards.
-5.	As a user of a recruiter, I should be able see all elements on the page clearly.
-6.	As a user of a recruiter, I should be able to find the original code for the website through a link to GitHub.
-
+As a user I want to:
+1.	easily navigate through a well-designed game through the webpage.
+2.	Have access to game rules that are easy to understand.
+3.	Test my memory skills and check the time and number of turns taken to match all cards.
+4.	Be able to see my score results after completing the game. 
+5.	Have the chance to play again.
+6.	use the website on any device without problem. 
 ### Design
 **Structure**
--	 I opted for a simple webpage design structure with a single title and footer, with relevant images for the front face and back face of the cards. I opted for a historical style colour scheme to make the flags stand out more.  
+-	I opted for a simple webpage design structure with a single title and footer, pop-up modal windows and relevant images for the front face and back face of the cards. I opted for a historical style colour scheme to make the flags stand out more.  
 **Colour Scheme**
--	A neutral, washed-out colour scheme in contrast to black and white text to make the buttons and scoring stand out. 
+-	A neutral, washed-out colour scheme in contrast to both dark and light text accordingly to make the buttons and scoring stand out. 
 -	The key colours being white, beige, brown and black.
--	The colours used will tie in with the colours of the back-face cards to keep the scheme throughout the website.
-
-![Colour Scheme](assets/ColourScheme.png)
-Source: [Coolors](https://coolors.co/879397-89aad2-f36874-fdfffc-fffad7)
+-	The colours used will tie in with the colours of the back image of cards to keep the scheme throughout the website.
+![Colour Scheme](assets/colour-scheme-1.png)
+Source: [Coolors]( https://coolors.co/8b5527-30150b-e2c6aa-aa8963-ffffff)
 **Typography**
-
+The Smythe font is used throughout the webpage, a font that suits the overall historical theme of the webpage. Bold, coloured text is used for emphasis on the heading and for buttons. Sans-serif is the backup font in case the original font does not load onto the website. 
 **Images**
-A relevant image was used for the back-face of the cards. An old compass design drawn on top of a vintage map. The flag images were taken from a website called [Country Flags API] (https://www.countryflags.io) to insert the flags API into the code so that it would show up on the card front-faces. 
-### Wireframes
-At the start of the project, I designed the wireframes using Balsamiq. These initial designs made it easier to plan the overal design and structure of the webpage. 
+A relevant image was used for the back-face of the cards. An old compass design drawn on top of a vintage map. The flag images were taken from a website called [Flagpedia](https://flagpedia.net/download/api) to insert the flags API into the code to render them onto the card faces of the game.
+###Wireframes
+At the start of the project, I designed the wireframes using Balsamiq. These initial designs made it easier to plan the overall design and structure of the webpage. Some elements of the final webpage are fairly different from these original wireframes.
 [Wireframes link] (assets/pdf/MSP2-wireframes.pdf)
-
 ## **Features**
 ### Existing Features
-**Header**
-
-**Sections**
-
-**Footer**
-
+**Game Score Area**
+-	The game score area that records the time taken and steps taken while flipping over the cards. The time starts as soon as the user clicks a card. The number of steps is recorded at each click. 
+**Memory Game Grid Area**
+-	The game area where the matching of cards takes place. There are 16 cards within the grid each showing the compass back-face image, until the user clicks on a card to show a flag image. There are 8 pairs of flags in a random order to match. 
+-	When all cards have been matched a modal window will pop-up to congratulate the user completing the game, displaying their score and allowing them to start again by clicking the restart button. 
+**Game Buttons Area**
+-	The reset button is there to refresh the grid area, the timer and the number of steps, as well as reshuffling the cards. 
+-	The how to play button allows a modal where a pop-up message is shown to the user containing information on game instructions. As well as a close button to remove the modal. 
 ### Features Left to Include
 **Future features**
-
+-	To allow users to have a choice between multiple difficulty levels where the number of card increase. 
+-	To save game results on a scoreboard so users can compare their own scores to themselves or other users. 
+-	To create a flip animation where cards are flipped in a more fun way, to make it more pleasing for users.  
 ## Technologies Used
 ### Languages
 -	HTML5
 -	CSS3
+-	JacaScript
 ###Frameworks, Libraries and Programmes
 -	Bootstrap4
 -	Fontawesome
@@ -90,6 +92,7 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 -	Balsamiq
 -	Google Fonts
 -	Coolors 
+-             jQuery
 #deployment
 ###deploy-to-github
 1. Log in to GitHub and locate the GitHub Repository. 
@@ -99,24 +102,21 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 [Link] ()
-- **Forking the GitHub Repository**
-  Forking allows you to create a copy of the original repository and propose changes to the repository owner via a pull request. 
-    1. Log in to GitHub and locate the GitHub Repository
-    2. At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
-3. You should now have a copy of the original repository in your GitHub account.
--**Cloning Repository**
-1. Navigate to [repository]().
-2. Click Code located over the files.
-3. Select how you want to create the local repo.
-4. Copy the url.
-5. Open Terminal.
-6. Change directory to where you want the repo to be.
-7. type "git clone" followed by the url copied in step 4.
-8. Enter, and a Local repo is created.
 #testing
 ###testing-user-stories
-1. **To be able to easily navigate throughout the site to find the desired content**
--
+- Upon entering the site, users are automatically greeted with the memory game page.
+-  The heading is large and readable and contrasts well with the background colour.
+- the game rules are easy to access, read and understand. 
+- the games timer and steps are readable and remain between the heading and the game grid. 
+- the matching of cards is simple and fun for users, it tests their memory skills.
+- there is a pop-up window after game is completed with users results so that they can play again to beat their score. 
+.
+
+###Testing Usability of Webpage
+-This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones.
+- Viewport tag included in the head of HTML files to tell the browser how to respond to different resolutions, particularly mobile ones.
+
+- Media queries used in the CSS file to target larger devices.
 
 - [**HTML Validator**](https://validator.w3.org/nu/#textarea)
 
