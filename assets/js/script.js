@@ -128,16 +128,10 @@ function unmatched() {
     secondCard.classList.toggle("card-image-hidden");
     firstCard.classList.toggle("disabled");
     secondCard.classList.toggle("disabled");
-  },1000)
+    firstCard.parentElement.classList.toggle('card-background');
+    secondCard.parentElement.classList.toggle('card-background');
+  },500);
 }
-
-const timer = document.getElementById("timeTaken");
-
-var time;
-var seconds = 0
-var minutes = 0;
-var startTimer = false;
-timeContainer.innerHTML = "Time:" + minutes + ":" + seconds;
 
 
 // timer
