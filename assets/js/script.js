@@ -1,53 +1,30 @@
-//rules and how to play buttons functions 
+//global variables 
 const rules = document.getElementById('rules');
 const modalBtn = document.getElementById('modalBtn');
 const closeBtn = document.getElementById('closeBtn');
 const endGame = document.getElementById('endGame');
 const restartBtn = document.getElementById('restartBtn');
-const resetBtn = document.getElementById('resetBtn');
+const resetBtn = document.getElementById('reset');
 const countryDiv = document.getElementById('cards');
-var openedCardCount = 0;
+const watch = document.getElementById('timeTaken');
 var openCards = [];
-var flips = 0;
-var amount = 0;
+var steps = 0;
+var timer;
+var time = 0;
+var matchedCards = 0;
 
-modalBtn.addEventListener('click', showRules); //opens popup for rules card
-closeBtn.addEventListener('click', closeRules); //closes popup for rules card
-
-//to show box with rules
-function showRules() {
-  rules.style.display = "block";
-}
-
-//to close box with rules
-function closeRules() {
-  rules.style.display = "none";
-}
-
-//to close box with
-function closeRules() {
-  rules.style.display = "none";
-}
-
-//ending modal events
-restartBtn.addEventListener('click', closeModal);
-
-// to close ending modal 
-function closeModal() {
-  endGame.style.display = "none";
-}
-
-//accessing flag images api
-
+//fetching flag images api data
 var countriesURL = "https://flagcdn.com/en/codes.json";
 
-function getData(url) {
-  return fetch(url)
+function getData() {
+  return fetch(countriesURL)
   .then(response => response.json())
   .then(data => renderCards(data));
 }
 
 //rendering flag images api onto the cards 
+
+getData(); //function to load initial game
 
 const renderCards = (countries) => {
   countrydiv = '';
@@ -57,20 +34,20 @@ const renderCards = (countries) => {
   clearInterval(timer);
   watch.innerHTML = 0;
   document.getElementById('stepsTaken').innerHTML = 0;
-  console.log(countries);
-  const countriesArray = [...Object.keys(countries).slice(0, 8), ...Object.keys(countries).slice(0, 8)];
+
+
+  const countriesArray = [...Object.keys(countries).slice(20, 28), ...Object.keys(countries).slice(20, 28)];
   shuffleArray(countriesArray);
   let flagCards = '';
 
   Object.keys(countriesArray).map(flags => {
-    return flagCards = `${flagCards} <div onclick = "onCardClick(event)" class="card" id="${flags}"><img class="card-image-hidden" id="image-${flags}" src="https://flagcdn.com/h120/${countriesArray[flags]}.png"/></div>`;
+    return flagCards = `${flagCards} <div onclick = "onCardClick(event)" class="card card-background" id="${flags}"><img class="card-image-hidden" id="image-${flags}" src="https://flagcdn.com/h80/${countriesArray[flags]}.png"/></div>`;
   });
 
   countryDiv.innerHTML = flagCards;
 }
-getData(countriesURL);
 
-// shuffling flags on cards
+//shuffling flags on cards
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
@@ -88,21 +65,20 @@ function onCardClick(event) {
   }
   steps++;
   document.getElementById('stepsTaken').innerHTML = steps;
-  console.log(event.target);
   let image = document.getElementById("image-" + event.target.id);
   image.classList.toggle("card-image-hidden");
   image.classList.toggle("disabled");
-
-  
+  image.parentElement.classList.toggle('card-background');
   cardOpen(image);
 }
+
+//matching cards
 
 function cardOpen(image) {
 
   openCards.push(image);
 
   if (openCards.length===2) {
-    console.log(openCards);
     if (openCards[0].src === openCards[1].src) {
       matched();
     }
@@ -110,11 +86,22 @@ function cardOpen(image) {
       unmatched();
     }
   }
- 
 }
 
 function matched() {
-  console.log("matched");
+  matchedCards++;
+  if (matchedCards == 8) {
+    endGame.style.display = "block";
+    clearInterval(timer);
+
+    let dateTimer = new Date(time);
+
+    document.getElementById('timerResults').innerHTML =
+    ('0'+dateTimer.getUTCMinutes()).slice(-2) + ':' +
+    ('0'+dateTimer.getUTCSeconds()).slice(-2);
+
+    document.getElementById('stepsResults').innerHTML = steps;
+  }
   openCards = [];
 }
 
@@ -123,7 +110,6 @@ function unmatched() {
   let secondCard = openCards[1];
   openCards = [];
   setTimeout(function(){
-    console.log("unmatched");
     firstCard.classList.toggle("card-image-hidden");
     secondCard.classList.toggle("card-image-hidden");
     firstCard.classList.toggle("disabled");
@@ -132,7 +118,6 @@ function unmatched() {
     secondCard.parentElement.classList.toggle('card-background');
   },500);
 }
-
 
 // timer
 
@@ -148,3 +133,25 @@ function timerStart() {
     ('0'+dateTimer.getUTCSeconds()).slice(-2);
   }, 1000);
 }
+
+//button events
+modalBtn.addEventListener('click', showRules); //opens popup for rules card
+closeBtn.addEventListener('click', closeRules); //closes popup for rules card
+
+//to show box with rules
+function showRules() {
+  rules.style.display = "block";
+}
+
+//to close box with
+function closeRules() {
+  rules.style.display = "none";
+}
+
+// to close ending modal 
+function closeModal() {
+  endGame.style.display = "none";
+}
+
+//ending modal events
+restartBtn.addEventListener('click', closeModal, renderCards); 
