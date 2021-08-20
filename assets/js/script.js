@@ -50,6 +50,13 @@ function getData(url) {
 //rendering flag images api onto the cards 
 
 const renderCards = (countries) => {
+  countrydiv = '';
+  openCards = [];
+  steps = 0;
+  time = 0;
+  clearInterval(timer);
+  watch.innerHTML = 0;
+  document.getElementById('stepsTaken').innerHTML = 0;
   console.log(countries);
   const countriesArray = [...Object.keys(countries).slice(0, 8), ...Object.keys(countries).slice(0, 8)];
   shuffleArray(countriesArray);
@@ -76,7 +83,11 @@ function shuffleArray(array) {
 
 // flippping over the cards to match
 function onCardClick(event) {
-  
+  if (steps == 0) {
+    timerStart();
+  }
+  steps++;
+  document.getElementById('stepsTaken').innerHTML = steps;
   console.log(event.target);
   let image = document.getElementById("image-" + event.target.id);
   image.classList.toggle("card-image-hidden");
@@ -99,19 +110,8 @@ function cardOpen(image) {
       unmatched();
     }
   }
-  //count steps for number of times cards clicked
  
 }
-
-// function () {
-// if (flips == 0) {
-//   startTimer();
-// }
-// if (openCards < 2) {
-//   flips = flips + 1;
-//   Steps.innerHTML ="Steps:" + flips;
-// }
-// }
 
 function matched() {
   console.log("matched");
