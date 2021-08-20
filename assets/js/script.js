@@ -140,18 +140,17 @@ var startTimer = false;
 timeContainer.innerHTML = "Time:" + minutes + ":" + seconds;
 
 
-//timer functions 
-function startTimer() {
-  time = setInterval(function() {
-    seconds++;
-    if(second === 59){
-      minutes++;
-      seconds = 0;
-    }
-    timeContainer.innerHTML = "Time:" + minutes + ":" + seconds;
-  }, 1000);
-}
+// timer
 
-function stopTimer() {
-  clearInterval(time);
+function timerStart() {
+  clearInterval(timer);
+  timer = setInterval(() => {
+    time += 1000;
+
+    let dateTimer = new Date(time);
+
+    watch.innerHTML = 
+    ('0'+dateTimer.getUTCMinutes()).slice(-2) + ':' +
+    ('0'+dateTimer.getUTCSeconds()).slice(-2);
+  }, 1000);
 }
