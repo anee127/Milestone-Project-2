@@ -8,30 +8,27 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-   background: beige;
+  background: #DFD1AE;
+  font-family: 'Smythe', sans-serif;
   }
 
- /* Heading area*/
+  /* Heading area*/
 
- .heading {
-  font-family: 'Smythe',sans-serif;
-  font-weight: 20px;
+.heading {
+  font-weight: bold;
+  font-size: 60px;
   text-align: center;
   position: relative;
-  color: rgb(104, 50, 50);
+  color: #261003;
 }  
 
 /* footer area*/
 
 footer {
-  margin: 0;
-  padding: 20px;
-  min-height: 120px;
   text-align: center;
-  font-size: 40px;
+  font-size: 70px;
   position: sticky;
-  font-family: 'Smythe',sans-serif;
-  color: brown;
+  color: #261003;
 }
 
 /*Game area*/
@@ -44,29 +41,30 @@ footer {
   margin: 10px;
   padding: 5px;
   font-size: 20px;
-  border: 1px solid #30150B;
+  border: 1px solid #261003;
   background-color: #e0b081;
-  color: #30150B;
+  color: #261003;
 }
 
  /* Restart and how to play button css*/
 
  .hero-btn {
+   font-family: 'Smythe', sans-serif;
   display: inline-block;
-  color: #624632;
-  border: 1px solid #624632;
+  color: #fff;
+  border: 1px solid #261003;
   padding: 12px 34px;
-  font-size: 14px;
-  background: #f1c9af;
+  font-size: 25px;
+  background: #8B5527;
   position: relative;
   transition: 1s;
 }
 
 .hero-btn:hover {
-  border: 1px solid #ffcbcb;
-  background: #ffcbcb;
+  border: 1px solid #AA8963;
+  background: #AA8963;
   color: #000000;
-  transition: 1s;
+  transition: 0.3s;
 }
 
  /* How to Play Rules*/
@@ -100,11 +98,18 @@ footer {
    margin: 5px;
    border: 0px;
    border-radius: 5px;
-   background-color: #624632;
+   background-color: #E2C6AA;
    color: #fff;
    font-size: 30px;
    justify-content: center;
  }
+
+ .close-btn:hover {
+  border: 1px solid #AA8963;
+  background: #AA8963;
+  color: #000000;
+  transition: 0.3s;
+}
 
 /*Styling game cards*/
 
@@ -127,7 +132,13 @@ footer {
   width: 100px;
   height: 100px;
   border: 2px solid #30150B;
-  background-image: url(assets/images/compass-square.jpg);
+  background-color: #E2C6AA;
+}
+
+.card-background {
+  background-image: url("https://cdn.pixabay.com/photo/2020/02/23/13/12/vintage-4873317_960_720.jpg");
+  background-size: cover;
+  background-position: left;
 }
 
 .disabled {
@@ -135,10 +146,10 @@ footer {
 }
 
 img {
+  object-position: center;
   object-fit: cover;
-  margin-top: 0.8rem;
+  margin-top:15%;
 }
-
 
 /*end game modal message css*/
 .modal-end {
@@ -161,7 +172,7 @@ img {
 }
 
 .message {
-  color: #624632;
+  color: #65361F;
   text-align: center;
   font-size: 30px;
 }
@@ -170,11 +181,20 @@ img {
   margin: 5px;
   border: 0px;
   border-radius: 5px;
-  background-color: #E2C6AA;
+  background-color: #B8A16F;
   color: #fff;
   font-size: 30px;
   justify-content: center;
 }
 
+.restart-btn:hover {
+  border: 1px solid #AA8963;
+  background: #AA8963;
+  color: #30150B;
+  transition: 0.3s;
+}
+
+
+/*Media*/
 
 /*media css*/
