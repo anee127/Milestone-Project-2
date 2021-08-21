@@ -41,7 +41,7 @@ const renderCards = (countries) => {
   let flagCards = '';
 
   Object.keys(countriesArray).map(flags => {
-    return flagCards = `${flagCards} <div onclick = "onCardClick(event)" class="card card-background" id="${flags}"><img class="card-image-hidden" id="image-${flags}" src="https://flagcdn.com/w80/${countriesArray[flags]}.png"/></div>`;
+    return flagCards = `${flagCards} <div onclick = "onCardClick(event)" class="card card-background" id="${flags}"><img class="card-image-hidden" id="image-${flags}" src="https://flagcdn.com/w160/${countriesArray[flags]}.png"/></div>`;
   });
 
   countryDiv.innerHTML = flagCards;
