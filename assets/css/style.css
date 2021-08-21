@@ -269,3 +269,42 @@ img {
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 320px){
+  .card {
+    width: 70px;
+    height: 70px;
+  }
+  .hero-btn {
+    width: 8rem;
+    height: 5rem;
+  }
+
+  .rules {
+   left: 12%;
+   top: 8%;
+   transform: translate(-8%, -12%);
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .modal-end {
+    left: 12%;
+   top: 8%;
+   transform: translate(-8%, -12%);
+  }
+
+  .modal-header {
+    font-size: 20px;
+  }
+
+  .message {
+    font-size: 15px;
+  }
+}
