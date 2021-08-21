@@ -153,7 +153,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - [**Jshint**](https://jshint.com/) 
 No major errors found in JavaScript file. 
 
-- [**Chrome Lighthouse test**](assets/images/lighthouse-test-1.png)
+- [**Chrome Lighthouse tool**](https://developers.google.com/web/tools/lighthouse)
+![Chrome Lighthouse test](assets/images/lighthouse-test-1.png)
 
 ### Additional-testing
 The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
