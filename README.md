@@ -38,7 +38,6 @@ This webpage was created to launch a simple memory card game that people of all 
 ## **User Experience (UX)**
 ### Purpose
 The second milestone project idea is to create a memory game webpage for users of all ages to play. With the use of flag images to help users learn the different patterns and colours of flags.
-
 ### User Stories
 As a user I want to:
 1.	easily navigate through a well-designed game through the webpage.
@@ -54,14 +53,14 @@ As a user I want to:
 -	A neutral, washed-out colour scheme in contrast to both dark and light text accordingly to make the buttons and scoring stand out. 
 -	The key colours being white, beige, brown and black.
 -	The colours used will tie in with the colours of the back image of cards to keep the scheme throughout the website.
-![Colour Scheme](assets/colour-scheme-1.png)
-Source: [Coolors]( https://coolors.co/8b5527-30150b-e2c6aa-aa8963-ffffff)
+![Colour Scheme](assets/colour-scheme.png)
+Source: [Coolors]( https://coolors.co/65361f-391905-805029-c9b892-e8ddc4-ffffff)
 **Typography**
 The Smythe font is used throughout the webpage, a font that suits the overall historical theme of the webpage. Bold, coloured text is used for emphasis on the heading and for buttons. Sans-serif is the backup font in case the original font does not load onto the website. 
 **Images**
 -	A relevant image was used for the back-face of the cards. An old compass drawing on washed-out paper.
 -	The flag images used an API to render them onto the card faces of the game.
-###Wireframes
+### Wireframes
 At the start of the project, I designed the wireframes using Balsamiq. These initial designs made it easier to plan the overall design and structure of the webpage. Some elements of the final webpage are different from these original wireframes.
 [Wireframes link] (assets/pdf/ms2-wireframes.pdf)
 ## **Features**
@@ -87,7 +86,7 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 -	HTML5
 -	CSS3
 -	JavaScript
-###Frameworks, Libraries and Programmes
+### Frameworks, Libraries and Programmes
 -	Bootstrap5
 -	FontAwesome
 -	Gitub
@@ -96,20 +95,21 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 -	Balsamiq
 -	Google Fonts
 -	Coolors 
--             jQuery
--            HTML Formatter
--            CSS Formatter
--           JShint
-#deployment
-###deploy-to-github
+- jQuery
+- HTML Formatter
+- CSS Formatter
+- JShint
+
+# Deployment
+### Deploy-to-github
 1.	Login to GitHub and find the GitHub repository.
 2.	Click the settings button at the top of the repository menu.
 3.	locate "Pages" on the settings page which will be at the bottom of the menu.
 4.	Under the subheading "Source" there will be a dropdown menu stating "None", select "Main or Master Branch" and save.
 5.	The page will refresh automatically.
 6.	The link to the published site will appear at the top of the page.
-#testing
-###testing-user-stories
+# Testing
+### Testing-user-stories
 - Upon entering the site, users are automatically greeted with the memory game page.
 -  The heading is large and readable and contrasts well with the background colour. 
 - the game buttons are highlighted when clicked.
@@ -120,7 +120,7 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 ###Testing Usability of Webpage
 -This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones by using media queries in the style.css file.
 - Viewport tag included in the head of HTML files to tell the browser how to respond to different resolutions, particularly mobile ones.
-###validator-checks
+### Validator-checks
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Code was entered through direct input.
 - [**HTML Validator**](https://validator.w3.org/nu/#textarea)
   One warning message received;
@@ -128,30 +128,30 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 Code not altered as hyphens have been used to help structure my HTML code. Six hyphens used for headings with two for sub-headings.
 - [**CSS Validator**](https://jigsaw.w3.org/css-validator/#validate_by_input)
  No error or warning messages received.
-###additional-testing
+### Additional-testing
 The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
 - The website was viewed on a variety of devices including desktops, Laptops, Mobile phones, iPads and iPhones.
 - Friends and family members were asked to review the site to point out any bugs, user experience issues and/or suggestions.
 - Project posted on Slack, asking for feedback from fellow students.
   - Feedback action:
     - 
-###bugs
+### Bugs
 -	The webpage did not come out responsive on devices smaller than 600px wide. Changes were mage to media queries to target the size of images and text areas to make them smaller but still readable on smaller devices.
 #credits
-###content
+### Content
 Bootstrap 5.1: Bootstrap Library used throughout the project, components used include the grid System, media queries, modals and buttons.
 - some JavaScript code was taken from  [Code Institute's](https://codeinstitute.net/) .
 - some JavaScript code and CSS styling was taken from [W3schools.com](https://www.w3schools.com/).
 - some JavaScript code was taken from [StackOverflow.com](https://stackoverflow.com/).
 
-###media
+### Media
 - The card back-face image was taken from [pixabay.com](https://www.pixabay.com)
 - The flag image API was taken from [Flagpedia.net](https://flagpedia.net/download/api)
 - Footer icons were taken from [FontAwesome]( https://fontawesome.com/).
-#acknowledgements
+# Acknowledgements
 - My Mentor for continuous help and support throughout the project.
  - The [Code Institute](https://codeinstitute.net/) Slack Community.
 - A friend who has given me continuous help and advice throughout the project.
-#contact
+# Contact
 Created by @aneesakhan
 Contact: Aneesa.khan97@gmail.com
