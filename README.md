@@ -140,9 +140,9 @@ The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
 #credits
 ### Content
 Bootstrap 5.1: Bootstrap Library used throughout the project, components used include the grid System, media queries, modals and buttons.
-- some JavaScript code was taken from  [Code Institute's](https://codeinstitute.net/) .
-- some JavaScript code and CSS styling was taken from [W3schools.com](https://www.w3schools.com/).
-- some JavaScript code was taken from [StackOverflow.com](https://stackoverflow.com/).
+- some JavaScript code was taken from [Code Institute's](https://codeinstitute.net/), [W3schools.com](https://www.w3schools.com/), [StackOverflow.com](https://stackoverflow.com/) and [dev.to](https://dev.to/).
+- some CSS styling code was taken from [W3schools.com](https://www.w3schools.com/).
+
 
 ### Media
 - The card back-face image was taken from [pixabay.com](https://www.pixabay.com)
