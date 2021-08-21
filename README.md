@@ -75,23 +75,23 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 ## **Features**
 ### Existing Features
 
-+ **Game Score Area**
+1. **Game Score Area**
 -	The game score area records the time taken and steps taken while flipping over the cards. The time starts as soon as the user clicks a card. The number of steps is recorded at each click. 
 ![Game Score Area](assets/images/game-score.png)
 
-+ **Memory Game Grid Area**
+2. **Memory Game Grid Area**
 -	The game area where the matching of cards takes place. There are 16 cards within the grid each showing the compass back-face image, until the user clicks on a card to show a flag image. There are 8 pairs of flags in a random order to match. 
 -	When all cards have been matched a modal window will pop-up to congratulate the user completing the game, displaying their score. 
 ![Game Grid Area](assets/images/game-area.png)
 ![End Game Modal](assets/images/end-game-modal.png)
 
-+ **Game Buttons Area**
+3. **Game Buttons Area**
 -	The restart button is there to refresh the grid area, the timer and the number of steps, as well as reshuffling the cards. 
 -	The how to play button shows a modal pop-up where a message is shown to the user containing information on game instructions. As well as a close button to remove the modal. 
 ![Game Buttons](assets/images/game-buttons.png)
 ![How To Play Modal](assets/images/rules-modal.png)
 
-+ **Footer**
+4. **Footer**
 -	There is an icon that has a link to GitHub, when clicked it will open a new tab to show the code for the webpage including the JavaScript code.
 ### Features Left to Include
 
