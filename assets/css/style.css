@@ -290,8 +290,7 @@ img {
   .hero-btn {
     width: 13rem;
     height: 4rem;
-    padding: 8px 10px;
-    font-size: 20%;
+    font-size: 50%;
   }
 
   .card {
