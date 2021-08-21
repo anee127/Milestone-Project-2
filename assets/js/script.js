@@ -1,10 +1,10 @@
-//global variables 
+// Global variables 
+
 const rules = document.getElementById('rules');
-const modalBtn = document.getElementById('modalBtn');
+const rulesBtn = document.getElementById('rulesBtn');
 const closeBtn = document.getElementById('closeBtn');
 const endGame = document.getElementById('endGame');
 const restartBtn = document.getElementById('restartBtn');
-const resetBtn = document.getElementById('reset');
 const countryDiv = document.getElementById('cards');
 const watch = document.getElementById('timeTaken');
 var openCards = [];
@@ -13,18 +13,19 @@ var timer;
 var time = 0;
 var matchedCards = 0;
 
-//fetching flag images api data
+// Fetching flag images api data
+
 var countriesURL = "https://flagcdn.com/en/codes.json";
 
-function getData() {
+function getCards() {
   return fetch(countriesURL)
   .then(response => response.json())
   .then(data => renderCards(data));
 }
 
-//rendering flag images api onto the cards 
+// Functions to render flag images 
 
-getData(); //function to load initial game
+getCards(); // Function called to render flag data onto cards
 
 const renderCards = (countries) => {
   countrydiv = '';
@@ -36,7 +37,7 @@ const renderCards = (countries) => {
   document.getElementById('stepsTaken').innerHTML = 0;
 
 
-  const countriesArray = [...Object.keys(countries).slice(20, 28), ...Object.keys(countries).slice(20, 28)];
+  const countriesArray = [...Object.keys(countries).slice(28, 36), ...Object.keys(countries).slice(28, 36)];
   shuffleArray(countriesArray);
   let flagCards = '';
 
@@ -47,18 +48,19 @@ const renderCards = (countries) => {
   countryDiv.innerHTML = flagCards;
 }
 
-//shuffling flags on cards
+// Shuffle function of flag images on cards, taken from: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
-      var temp = array[i];
+      var flag = array[i];
       array[i] = array[j];
-      array[j] = temp;
+      array[j] = flag;
   }
 }
 
-// flippping over the cards to match
+// Flipping of cards function
+
 function onCardClick(event) {
   if (steps == 0) {
     timerStart();
@@ -72,7 +74,7 @@ function onCardClick(event) {
   cardOpen(image);
 }
 
-//matching cards
+// Matching of cards Functions
 
 function cardOpen(image) {
 
@@ -119,7 +121,7 @@ function unmatched() {
   },500);
 }
 
-// timer
+// Timer functions taken from: https://dev.to/stackfindover/how-to-create-a-stopwatch-in-javascript-57a8
 
 function timerStart() {
   clearInterval(timer);
@@ -134,24 +136,25 @@ function timerStart() {
   }, 1000);
 }
 
-//button events
-modalBtn.addEventListener('click', showRules); //opens popup for rules card
-closeBtn.addEventListener('click', closeRules); //closes popup for rules card
+// Button events
 
-//to show box with rules
+rulesBtn.addEventListener('click', showRules); //opens pop-up for rules modal
+closeBtn.addEventListener('click', closeRules); //closes pop-up for rules modal
+
+// How to play modal functions
+
 function showRules() {
   rules.style.display = "block";
 }
 
-//to close box with
 function closeRules() {
   rules.style.display = "none";
-}
+} 
 
-// to close ending modal 
+// End Game modal functions 
+
 function closeModal() {
   endGame.style.display = "none";
 }
 
-//ending modal events
-restartBtn.addEventListener('click', closeModal, renderCards); 
+restartBtn.addEventListener('click', closeModal); // closes End Game modal
