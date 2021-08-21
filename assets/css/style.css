@@ -198,9 +198,8 @@ img {
 }
 
 .message {
-  padding: 0, 20px, 0, 20px;
+  padding: 0 20px;
   color: #391905;
-  font-weight: bold;
    text-align: center;
    font-size: 30px;
   word-spacing: 4px;
@@ -271,13 +270,38 @@ img {
 }
 
 @media screen and (max-width: 320px){
+
+  .heading {
+    font-size: 50%;
+  }
+
+  .footer {
+    font-size: 50px;
+  }
+
+  .fab {
+    font-size: 30px;
+  }
+  
+  .game-area {
+    font-size: 20px;
+  }
+
+  .hero-btn {
+    width: 13rem;
+    height: 4rem;
+    padding: 8px 10px;
+    font-size: 20%;
+  }
+
   .card {
     width: 60px;
     height: 60px;
   }
-  .hero-btn {
-    width: 8rem;
-    height: 5rem;
+  
+
+  img {
+    margin-top: 0;
   }
 
   .rules {
