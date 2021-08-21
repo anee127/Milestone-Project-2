@@ -272,7 +272,7 @@ img {
 @media screen and (max-width: 320px){
 
   .heading {
-    font-size: 50%;
+    font-size: 60px;
   }
 
   .footer {
