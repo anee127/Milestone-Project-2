@@ -170,10 +170,9 @@ Chrome Lighthouse test on desktop device
    + All button functions were tested and working fine, modal pop-ups appeared when needed and came cards flipped when clicked. 
     + There were still a few styling and function errors for the flag images, only on iPhone devices so these were checked. 
 ### Bugs
-- The webpage did not come out responsive on devices smaller than 480px wide. Changes were made to media queries to target the size of text, images, buttons and game cards to make them smaller but still readable on smaller devices.
-- Responsiveness on iPhones was a problem. flag images shifted downwards and out of cards when clicked. This was addressed by resized flag images for the main styling and in media queries. However, Flag images were cut off in some areas, this remained unsolved after a lot of trial and error.
+- The webpage did not come out responsive on devices smaller than 480px wide. Changes were made to media queries to target the size of text, images, buttons and game cards to make them smaller but still readable on smaller devices.z
+- Responsiveness on iPhones was a problem. flag images shifted downwards and out of cards when clicked. This was addressed by changing the width of the flag images in the api url in the JavaScript file as well as changing the styling in media queries. However, Flag images were cut off in some areas, this remained unsolved after a lot of trial and error.
 - When modal windows are shown on device, the webpage underneath is responsive as cards will still flip over once clicked. Due to loss of time, this was not fixed. A new div wrapping the modal windows had to be made and applied to the JavaScript file for it to function. However, a lot of work was still needed in order to fix this. It is not a major flaw if the user does not click in the background when modals are open.
-
 # Credits
 ### Content
 Bootstrap 5.1: Bootstrap Library used throughout the project, components used include the grid System, media queries, modals and buttons.
