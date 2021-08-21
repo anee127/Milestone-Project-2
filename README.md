@@ -68,12 +68,16 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 ### Existing Features
 + **Game Score Area**
 -	The game score area records the time taken and steps taken while flipping over the cards. The time starts as soon as the user clicks a card. The number of steps is recorded at each click. 
+![Game Score Area](assets/images/game-score.png)
 + **Memory Game Grid Area**
 -	The game area where the matching of cards takes place. There are 16 cards within the grid each showing the compass back-face image, until the user clicks on a card to show a flag image. There are 8 pairs of flags in a random order to match. 
 -	When all cards have been matched a modal window will pop-up to congratulate the user completing the game, displaying their score. 
+![Game Grid Area](assets/images/game-area.png)
+![End Game Modal](assets/images/end-game-modal.png)
 + **Game Buttons Area**
 -	The restart button is there to refresh the grid area, the timer and the number of steps, as well as reshuffling the cards. 
 -	The how to play button shows a modal pop-up where a message is shown to the user containing information on game instructions. As well as a close button to remove the modal. 
+![Game Buttons](assets/images/game-buttons.png)
 + **Footer**
 -	There is an icon that has a link to GitHub, when clicked it will open a new tab to show the code for the webpage including the JavaScript code.
 ### Features Left to Include
@@ -122,12 +126,16 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 -This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones by using media queries in the style.css file.
 - Viewport tag included in the head of HTML files to tell the browser how to respond to different resolutions, particularly mobile ones.
 ### Validator-checks
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Code was entered through direct input.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Code was entered through direct input. Chrome Lighthouse tool was used to check the performance of the webpage. 
+
 - [**HTML Validator**](https://validator.w3.org/nu/#textarea)
  No warning Message or Errors recieved.
 
 - [**CSS Validator**](https://jigsaw.w3.org/css-validator/#validate_by_input)
  No errors or warning messages were recived for my css code but two errors and several warnings occured for the third party links used in my code.
+
+- [**Chrome Lighthouse test**](assets/images/lighthouse-test-1.png)
+
 ### Additional-testing
 The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
 - The website was viewed on a variety of devices including desktops, Laptops, Mobile phones, iPads and iPhones.
