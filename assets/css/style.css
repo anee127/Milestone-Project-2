@@ -13,7 +13,7 @@ body {
   font-family: 'Smythe', sans-serif;
   }
 
-  /* Heading area*/
+  /* -------------------------- Heading Area styling */
 
 .heading {
   font-weight: bold;
@@ -25,7 +25,7 @@ body {
   word-spacing: 4px;
 }  
 
-/* footer area*/
+/* -------------------------------- Footer area styling*/
 
 footer {
   text-align: center;
@@ -36,7 +36,12 @@ footer {
   word-spacing: 4px;
 }
 
-/*Game area*/
+.fab {
+ color: #391905;
+ font-size: 50px;
+}
+
+/* ----------------------------------- Game Score area styling*/
 
 .game-container {
   margin-top: 40px;
@@ -53,11 +58,11 @@ footer {
   word-spacing: 5px;
 }
 
- /* Restart and how to play button css*/
+ /* -------------------------------------- Restart and How To Play button styling*/
 
  .hero-btn {
-   width: 13rem;
-   height: 4rem;
+  width: 13rem;
+  height: 4rem;
   font-family: 'Smythe', sans-serif;
   display: inline-block;
   color: #fff;
@@ -71,14 +76,14 @@ footer {
 }
 
 .hero-btn:hover {
-  border: 1px solid #B8A16F;
-  background: #B8A16F;
+  border: 1px solid #C9B892;
+  background: #C9B892;
   color: #261003;
   transition: 0.3s;
   letter-spacing: 2px;
 }
 
- /* How to Play Rules*/
+ /* ------------------------------------- How to Play rules modal Styling */
  
  .rules {
    display: none;
@@ -91,12 +96,12 @@ footer {
    border: 0.2em solid ;
    border-radius: 20px;
    justify-content: center;
-   background-color: #D7C9AD;
+   background-color: #C9B892;
  }
 
  .modal-title {
-   font-size: 40px;
-   font-weight: bold;
+   font-size: 45px;
+   font-weight: bolder;
    justify-content: center;
    color: #391905;
    letter-spacing: 2px;
@@ -104,7 +109,7 @@ footer {
  }
 
  .text {
-   color: #65361F;
+   color: #391905;
    text-align: center;
    font-size: 30px;
   word-spacing: 4px;
@@ -129,7 +134,7 @@ footer {
   transition: 0.3s;
 }
 
-/*Styling game cards*/
+/* ------------------------------------------ Game Cards styling */
 
 .card-area {
   margin: 20px auto;
@@ -149,7 +154,7 @@ footer {
   width: 100px;
   height: 100px;
   border: 3px solid #391905;
-  background-color: #D7C9AD;
+  background-color: #C9B892;
 }
 
 .card-background {
@@ -168,7 +173,7 @@ img {
   margin-top:15%;
 }
 
-/*end game modal message css*/
+/* -------------------------------------- End Game modal message styling */
 .modal-end {
   display: none;
    position: fixed;
@@ -180,12 +185,12 @@ img {
    border: 0.2em solid ;
    border-radius: 20px;
    justify-content: center;
-   background-color: #D7C9AD;
+   background-color: #C9B892;
 }
 
 .modal-header {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: bolder;
    justify-content: center;
    color: #391905;
    letter-spacing: 2px;
@@ -193,7 +198,8 @@ img {
 }
 
 .message {
-  color: #805029;
+  padding: 0, 20px, 0, 20px;
+  color: #391905;
   font-weight: bold;
    text-align: center;
    font-size: 30px;
@@ -222,15 +228,13 @@ img {
   color: #391905;
   transition: 0.3s;
 } 
-
-
-/*Media*/
+ 
+/* -------------------------------- Media Queries styling for responsivity on smaller devices */
 
 @media screen and (max-width: 480px){
   .card {
     width: 80px;
-    height: 80px;   /* max-width: calc(100%-80px);
-  max-height: calc(100%-80px); */
+    height: 80px;
   }
   .hero-btn {
     width: 9rem;
@@ -265,6 +269,3 @@ img {
     font-size: 20px;
   }
 }
-
-
-
