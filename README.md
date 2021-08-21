@@ -53,8 +53,9 @@ As a user I want to:
 -	A neutral, washed-out colour scheme in contrast to both dark and light text accordingly to make the buttons and scoring stand out. 
 -	The key colours being white, beige, brown and black.
 -	The colours used will tie in with the colours of the back image of cards to keep the scheme throughout the website.
-![Colour Scheme](assets/colour-scheme.png)
+![Colour Scheme](assets/images/colour-scheme-2.png)
 Source: [Coolors]( https://coolors.co/65361f-391905-805029-c9b892-e8ddc4-ffffff)
+
 **Typography**
 The Smythe font is used throughout the webpage, a font that suits the overall historical theme of the webpage. Bold, coloured text is used for emphasis on the heading and for buttons. Sans-serif is the backup font in case the original font does not load onto the website. 
 **Images**
@@ -65,15 +66,15 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 [Wireframes link] (assets/pdf/ms2-wireframes.pdf)
 ## **Features**
 ### Existing Features
-**Game Score Area**
++ **Game Score Area**
 -	The game score area records the time taken and steps taken while flipping over the cards. The time starts as soon as the user clicks a card. The number of steps is recorded at each click. 
-**Memory Game Grid Area**
++ **Memory Game Grid Area**
 -	The game area where the matching of cards takes place. There are 16 cards within the grid each showing the compass back-face image, until the user clicks on a card to show a flag image. There are 8 pairs of flags in a random order to match. 
 -	When all cards have been matched a modal window will pop-up to congratulate the user completing the game, displaying their score. 
-**Game Buttons Area**
++ **Game Buttons Area**
 -	The restart button is there to refresh the grid area, the timer and the number of steps, as well as reshuffling the cards. 
 -	The how to play button shows a modal pop-up where a message is shown to the user containing information on game instructions. As well as a close button to remove the modal. 
-**Footer**
++ **Footer**
 -	There is an icon that has a link to GitHub, when clicked it will open a new tab to show the code for the webpage including the JavaScript code.
 ### Features Left to Include
 **Future features**
