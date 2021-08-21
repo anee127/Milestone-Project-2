@@ -234,7 +234,7 @@ img {
  
 /* -------------------------------- Media Queries styling for responsivity on smaller devices */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) and (min-width:320px){
 
   .heading {
     font-size: 40px;
@@ -275,9 +275,6 @@ img {
     font-size: 20px;
   }
 
-  .card-area {
-   
-  }
 
   .card {
     width: 80px;
