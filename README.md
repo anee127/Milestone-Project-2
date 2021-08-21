@@ -106,7 +106,7 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 -	[CSS3](https://en.wikipedia.org/wiki/CSS)
 -	[JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 ### Frameworks, Libraries and Programmes
--	[Bootstrap 5.1](https://getbootstrap.com/))
+-	[Bootstrap 5.1](https://getbootstrap.com/)
 -	[FontAwesome 5.15.2](https://fontawesome.com/v5.15/)
 -	[GitHub](https://github.com/)
 -	[Git](https://git-scm.com/)
@@ -123,59 +123,66 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 ### Deploy To Github
 1.	Login to GitHub and find the GitHub repository.
 2.	Click the settings button at the top of the repository menu.
-3.	locate "Pages" on the settings page which will be at the bottom of the menu.
+3.	Locate "Pages" on the settings page which will be at the bottom of the menu.
 4.	Under the subheading "Source" there will be a dropdown menu stating "None", select "Main or Master Branch" and save.
 5.	The page will refresh automatically.
 6.	The link to the published site will appear at the top of the page.
 # Testing
 ### Testing User Stories
 - Upon entering the site, users are automatically greeted with the memory game page.
+- The layout is simple and neutral to allow the colourful flag designs to stand out.
 -  The heading is large and readable and contrasts well with the background colour. 
-- the game buttons are highlighted when clicked.
-- the rules pop-up window is easy to access, read and understand. 
-- the games timer and steps are readable and remain between the heading and the game grid. 
-- the matching of cards is simple and fun for users, it tests their memory skills.
-- there is a pop-up window after game is completed with users results so that they can play again to beat their score.
+- All images have a good enough resolution and do not appear blurry. 
+- The game buttons are highlighted when clicked.
+- The rules pop-up window is easy to access, read and understand. 
+- The games timer and steps are readable and remain between the heading and the game grid. 
+- The matching of cards is simple and fun for users, it tests their memory skills.
+- There is a pop-up window after game is completed with users results so that they can play again to beat their score.
 
 ### Testing Usability of Webpage
 - This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones by using media queries in the style.css file.
 - Viewport tag included in the head of HTML files to tell the browser how to respond to different resolutions, particularly mobile ones.
 ### Validator Checks
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Code was entered through direct input. Chrome Lighthouse tool was used to check the performance of the webpage. Jshint JavaScript code checker was used to find errors in javascript code.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Code was entered through direct input. Chrome Lighthouse tool was used to check the performance of the webpage. JShint JavaScript code checker was used to find errors in JavaScript code.
 
 - [**HTML Validator**](https://validator.w3.org/nu/#textarea)
- No warning Message or Errors recieved.
+ No warning Message or Errors received.
 
 - [**CSS Validator**](https://jigsaw.w3.org/css-validator/#validate_by_input)
- No errors or warning messages were recived for my css code but two errors and several warnings occured for the third party links used in my code.
+ No errors or warning messages were received for my CSS code several warnings occurred for the third party links used in my code.
 
-- [**Jshint**](https://jshint.com/) 
-No major errors found in JavaScript file. 
+- [**JShint**](https://jshint.com/) 
+The only issues found through the JShint report were the use of 'const', ‘let, and 'arrow-function' variable, which is only available in ES6, but were not major errors.
+[JShint report](assets/images/jshint-report.png) 
 
 - [**Chrome Lighthouse tool**](https://developers.google.com/web/tools/lighthouse)
+Chrome Lighthouse test on mobile device
 ![Chrome Lighthouse test](assets/images/lighthouse-test-1.png)
-
-### Additional-testing
-The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
+Chrome Lighthouse test on desktop device
+![Chrome Lighthouse test](assets/images/lighthouse-test-2.png)
+### Additional Testing
+- The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
 - The website was viewed on a variety of devices including desktops, Laptops, Mobile phones, iPads and iPhones.
 - Friends and family members were asked to review the site to point out any bugs, user experience issues and/or suggestions.
 - Project posted on Slack, asking for feedback from fellow students.
   - Feedback action:
-    + There were still a few styling and function errors, only on iPhone devices so these were checked. 
+   + All button functions were tested and working fine, modal pop-ups appeared when needed and came cards flipped when clicked. 
+    + There were still a few styling and function errors for the flag images, only on iPhone devices so these were checked. 
 ### Bugs
-- The webpage did not come out responsive on devices smaller than 600px wide. Changes were mage to media queries to target the size of images and text areas to make them smaller but still readable on smaller devices.
-- Responsiveness on iPhones was a problem. flag images popped out of the cards. changed were made to media queries and javascript to conteract this.
+- The webpage did not come out responsive on devices smaller than 480px wide. Changes were made to media queries to target the size of text, images, buttons and game cards to make them smaller but still readable on smaller devices.
+- Responsiveness on iPhones was a problem. flag images shifted downwards and out of cards when clicked. This was addressed by resized flag images for the main styling and in media queries. However, Flag images were cut off in some areas, this remained unsolved after a lot of trial and error.
+- When modal windows are shown on device, the webpage underneath is responsive as cards will still flip over once clicked. ?????? was done in the JavaScript code to disable content underneath the modal windows. 
 
 # Credits
 ### Content
 Bootstrap 5.1: Bootstrap Library used throughout the project, components used include the grid System, media queries, modals and buttons.
-- some JavaScript code was taken from [Code Institute's](https://codeinstitute.net/), [W3schools.com](https://www.w3schools.com/), [StackOverflow.com](https://stackoverflow.com/) and [dev.to](https://dev.to/).
-- some CSS styling code was taken from [W3schools.com](https://www.w3schools.com/).
+- Some JavaScript code was taken from [CodeInstitute.net](https://codeinstitute.net/), [W3schools.com](https://www.w3schools.com/), [StackOverflow.com](https://stackoverflow.com/) and [dev.to](https://dev.to/).
+- Some CSS styling code was taken from [W3schools.com](https://www.w3schools.com/).
 ### Media
-- The card back-face image was taken from [pixabay.com](https://www.pixabay.com)
-- The flag image API was taken from [Flagpedia.net](https://flagpedia.net/download/api)
-- Footer icons were taken from [FontAwesome]( https://fontawesome.com/).
+- The card back-face image was taken from [Pixabay.com](https://www.pixabay.com).
+- The flag image API was taken from [Flagpedia.net](https://flagpedia.net/download/api).
+- Footer icons were taken from [FontAwesome.com]( https://fontawesome.com/).
 # Acknowledgements
 - My Mentor for continuous help and support throughout the project.
  - The [Code Institute](https://codeinstitute.net/) Slack Community.
