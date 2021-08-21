@@ -2,13 +2,14 @@
 
 * {
   box-sizing: border-box;
-}
+} 
 
 body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #DFD1AE;
+  text-size-adjust: 20%;
+  background: #E8DDC4;
   font-family: 'Smythe', sans-serif;
   }
 
@@ -20,6 +21,8 @@ body {
   text-align: center;
   position: relative;
   color: #261003;
+  letter-spacing: 2px;
+  word-spacing: 4px;
 }  
 
 /* footer area*/
@@ -29,6 +32,8 @@ footer {
   font-size: 70px;
   position: sticky;
   color: #261003;
+  letter-spacing: 2px;
+  word-spacing: 4px;
 }
 
 /*Game area*/
@@ -37,84 +42,96 @@ footer {
   margin-top: 40px;
 }
 
-.game-info {
-  margin: 10px;
-  padding: 5px;
-  font-size: 20px;
+.game-area {
+  margin: auto;
+  padding: 0 10px 0 10px;
+  font-size: 25px;
   border: 1px solid #261003;
-  background-color: #e0b081;
-  color: #261003;
+  background-color: #805029;
+  color: #fff;
+  letter-spacing: 2px;
+  word-spacing: 5px;
 }
 
  /* Restart and how to play button css*/
 
  .hero-btn {
-   font-family: 'Smythe', sans-serif;
+   width: 13rem;
+   height: 4rem;
+  font-family: 'Smythe', sans-serif;
   display: inline-block;
   color: #fff;
   border: 1px solid #261003;
   padding: 12px 34px;
   font-size: 25px;
-  background: #8B5527;
+  background: #805029;
   position: relative;
   transition: 1s;
+  letter-spacing: 2px;
 }
 
 .hero-btn:hover {
-  border: 1px solid #AA8963;
-  background: #AA8963;
-  color: #000000;
+  border: 1px solid #B8A16F;
+  background: #B8A16F;
+  color: #261003;
   transition: 0.3s;
+  letter-spacing: 2px;
 }
 
  /* How to Play Rules*/
  
  .rules {
    display: none;
-   margin: 100px, 200px, 100px, 200px;
    position: fixed;
    z-index: 99;
-   left: 0;
-   top: 0;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
    font-family: 'Smythe', sans-serif;
    border: 0.2em solid ;
    border-radius: 20px;
    justify-content: center;
-   background-color: antiquewhite;
+   background-color: #D7C9AD;
  }
 
  .modal-title {
    font-size: 40px;
+   font-weight: bold;
    justify-content: center;
+   color: #391905;
+   letter-spacing: 2px;
+   word-spacing: 4px;
  }
 
  .text {
-   color: #624632;
+   color: #65361F;
    text-align: center;
    font-size: 30px;
+  word-spacing: 4px;
  }
 
  .close-btn {
    margin: 5px;
    border: 0px;
    border-radius: 5px;
-   background-color: #E2C6AA;
+   background-color: #805029;
    color: #fff;
    font-size: 30px;
    justify-content: center;
+   letter-spacing: 2px;
+   word-spacing: 4px;
  }
 
  .close-btn:hover {
-  border: 1px solid #AA8963;
-  background: #AA8963;
-  color: #000000;
+  border: 1px solid #E8DDC4;
+  background: #E8DDC4;
+  color: #391905;
   transition: 0.3s;
 }
 
 /*Styling game cards*/
 
 .card-area {
-  max-width: 50rem;
   margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -131,8 +148,8 @@ footer {
 .card {
   width: 100px;
   height: 100px;
-  border: 2px solid #30150B;
-  background-color: #E2C6AA;
+  border: 3px solid #391905;
+  background-color: #D7C9AD;
 }
 
 .card-background {
@@ -154,47 +171,100 @@ img {
 /*end game modal message css*/
 .modal-end {
   display: none;
-  margin: 100px, 200px, 100px, 200px;
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  font-family: 'Smythe', sans-serif;
-  border: 0.2em solid ;
-  border-radius: 20px;
-  justify-content: center;
-  background-color: antiquewhite;
+   position: fixed;
+   z-index: 99;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   font-family: 'Smythe', sans-serif;
+   border: 0.2em solid ;
+   border-radius: 20px;
+   justify-content: center;
+   background-color: #D7C9AD;
 }
 
 .modal-header {
   font-size: 40px;
-  justify-content: center;
+  font-weight: bold;
+   justify-content: center;
+   color: #391905;
+   letter-spacing: 2px;
+   word-spacing: 4px;
 }
 
 .message {
-  color: #65361F;
-  text-align: center;
-  font-size: 30px;
+  color: #805029;
+  font-weight: bold;
+   text-align: center;
+   font-size: 30px;
+  word-spacing: 4px;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 .restart-btn {
   margin: 5px;
   border: 0px;
   border-radius: 5px;
-  background-color: #B8A16F;
+  background-color: #805029;
   color: #fff;
   font-size: 30px;
   justify-content: center;
+  letter-spacing: 2px;
+  word-spacing: 4px;
 }
 
 .restart-btn:hover {
-  border: 1px solid #AA8963;
-  background: #AA8963;
-  color: #30150B;
+  border: 1px solid #E8DDC4;
+  background: #E8DDC4;
+  color: #391905;
   transition: 0.3s;
-}
+} 
 
 
 /*Media*/
 
-/*media css*/
+@media screen and (max-width: 480px){
+  .card {
+    width: 80px;
+    height: 80px;   /* max-width: calc(100%-80px);
+  max-height: calc(100%-80px); */
+  }
+  .hero-btn {
+    width: 9rem;
+    height: 6rem;
+  }
+
+  .rules {
+   left: 15%;
+   top: 10%;
+   transform: translate(-10%, -15%);
+  }
+
+  .modal-title {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .modal-end {
+    left: 15%;
+   top: 10%;
+   transform: translate(-10%, -15%);
+  }
+
+  .modal-header {
+    font-size: 25px;
+  }
+
+  .message {
+    font-size: 20px;
+  }
+}
+
+
+
