@@ -1,6 +1,6 @@
 # Flag Memory Game
 
-![Flag Memory Game](/assets/images/responsive-design-2.png)
+![Flag Memory Game](/assets/images/responsive-design-2.1.png)
 
 **Live Page**: https://anee127.github.io/Milestone-Project-2/
 
