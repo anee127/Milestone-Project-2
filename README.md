@@ -135,9 +135,10 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 - the rules pop-up window is easy to access, read and understand. 
 - the games timer and steps are readable and remain between the heading and the game grid. 
 - the matching of cards is simple and fun for users, it tests their memory skills.
-- there is a pop-up window after game is completed with users results so that they can play again to beat their score. 
-###Testing Usability of Webpage
--This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones by using media queries in the style.css file.
+- there is a pop-up window after game is completed with users results so that they can play again to beat their score.
+
+### Testing Usability of Webpage
+- This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones by using media queries in the style.css file.
 - Viewport tag included in the head of HTML files to tell the browser how to respond to different resolutions, particularly mobile ones.
 ### Validator Checks
 
