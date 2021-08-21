@@ -28,7 +28,6 @@ function getCards() {
 getCards(); // Function called to render flag data onto cards
 
 const renderCards = (countries) => {
-  countrydiv = '';
   openCards = [];
   steps = 0;
   time = 0;

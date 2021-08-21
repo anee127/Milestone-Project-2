@@ -20,7 +20,7 @@ body {
   font-size: 60px;
   text-align: center;
   position: relative;
-  color: #261003;
+  color: #391905;
   letter-spacing: 2px;
   word-spacing: 4px;
 }  
@@ -31,12 +31,13 @@ footer {
   text-align: center;
   font-size: 70px;
   position: sticky;
-  color: #261003;
+  color: #391905;
   letter-spacing: 2px;
   word-spacing: 4px;
 }
 
 .fab {
+ margin-top: 20px;
  color: #391905;
  font-size: 50px;
 }
@@ -49,9 +50,9 @@ footer {
 
 .game-area {
   margin: auto;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
   font-size: 25px;
-  border: 1px solid #261003;
+  border: 1px solid #391905;
   background-color: #805029;
   color: #fff;
   letter-spacing: 2px;
@@ -66,7 +67,7 @@ footer {
   font-family: 'Smythe', sans-serif;
   display: inline-block;
   color: #fff;
-  border: 1px solid #261003;
+  border: 1px solid #391905;
   padding: 12px 34px;
   font-size: 25px;
   background: #805029;
@@ -78,7 +79,7 @@ footer {
 .hero-btn:hover {
   border: 1px solid #C9B892;
   background: #C9B892;
-  color: #261003;
+  color: #391905;
   transition: 0.3s;
   letter-spacing: 2px;
 }
@@ -171,6 +172,8 @@ img {
   object-position: center;
   object-fit: cover;
   margin-top:15%;
+  height: auto;
+  width: 100%;
 }
 
 /* -------------------------------------- End Game modal message styling */
@@ -231,16 +234,21 @@ img {
 /* -------------------------------- Media Queries styling for responsivity on smaller devices */
 
 @media screen and (max-width: 480px){
-  .card {
-    width: 80px;
-    height: 80px;
+
+  .heading {
+    font-size: 40px;
+  }
+
+  footer {
+    font-size: 20px;
   }
   .hero-btn {
     width: 9rem;
     height: 6rem;
   }
 
-  .rules {
+
+  /*.rules {
    left: 15%;
    top: 10%;
    transform: translate(-10%, -15%);
@@ -266,10 +274,10 @@ img {
 
   .message {
     font-size: 20px;
-  }
+  } */
 }
 
-@media screen and (max-width: 320px){
+/* @media screen and (max-width: 320px){
 
   .heading {
     font-size: 60px;
@@ -330,4 +338,4 @@ img {
   .message {
     font-size: 15px;
   }
-}
+} */ 
