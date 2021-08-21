@@ -123,11 +123,10 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 ### Validator-checks
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Code was entered through direct input.
 - [**HTML Validator**](https://validator.w3.org/nu/#textarea)
-  One warning message received;
-> Warning: The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.
-Code not altered as hyphens have been used to help structure my HTML code. Six hyphens used for headings with two for sub-headings.
+ No warning Message or Errors recieved.
+
 - [**CSS Validator**](https://jigsaw.w3.org/css-validator/#validate_by_input)
- No error or warning messages received.
+ No errors or warning messages were recived for my css code but two errors and several warnings occured for the third party links used in my code.
 ### Additional-testing
 The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
 - The website was viewed on a variety of devices including desktops, Laptops, Mobile phones, iPads and iPhones.
@@ -142,8 +141,6 @@ The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
 Bootstrap 5.1: Bootstrap Library used throughout the project, components used include the grid System, media queries, modals and buttons.
 - some JavaScript code was taken from [Code Institute's](https://codeinstitute.net/), [W3schools.com](https://www.w3schools.com/), [StackOverflow.com](https://stackoverflow.com/) and [dev.to](https://dev.to/).
 - some CSS styling code was taken from [W3schools.com](https://www.w3schools.com/).
-
-
 ### Media
 - The card back-face image was taken from [pixabay.com](https://www.pixabay.com)
 - The flag image API was taken from [Flagpedia.net](https://flagpedia.net/download/api)
