@@ -6,7 +6,7 @@
 
 **This game is part of the second Milestone Project carried out through the Code Institute.**
 
-This webpage was created to launch a simple memory card game that people of all ages can play. The purpose it to match pairs of cards together with the same country’s flag design. The website itself is an example of my skills in HTML, CSS and JavaScript. 
+This webpage was created to launch a simple memory card game that people of all ages can play. The purpose it to match pairs of cards together with the same country’s flag design. The website itself is an example of my skills in HTML, CSS and JavaScript. There is a link to the GitHub repository, in the footer, for users who wish to see the code behind the webpage.
 
 ## <u>Table of Contents</u>
 [**User Experience (UX)**](#user-experience-ux)
@@ -22,9 +22,9 @@ This webpage was created to launch a simple memory card game that people of all 
 + [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
 [Deployment](#deployment)
 + [Deploy to Github](#deploy-to-github)
-+ [Accessing Code](#accessing-code)
 [Testing](#testing)
 + [Testing User Stories](#testing-user-stories)
++[Testing Usability of Webpage](#testing-usability-of-webpage)
 + [Validator Checks](#validator-checks)
 + [Responsive Design](#responsive-design)
 + [Additional Testing](#additional-testing)
@@ -59,102 +59,99 @@ Source: [Coolors]( https://coolors.co/8b5527-30150b-e2c6aa-aa8963-ffffff)
 **Typography**
 The Smythe font is used throughout the webpage, a font that suits the overall historical theme of the webpage. Bold, coloured text is used for emphasis on the heading and for buttons. Sans-serif is the backup font in case the original font does not load onto the website. 
 **Images**
-A relevant image was used for the back-face of the cards. An old compass design drawn on top of a vintage map. The flag images were taken from a website called [Flagpedia](https://flagpedia.net/download/api) to insert the flags API into the code to render them onto the card faces of the game.
+-	A relevant image was used for the back-face of the cards. An old compass drawing on washed-out paper.
+-	The flag images used an API to render them onto the card faces of the game.
 ###Wireframes
-At the start of the project, I designed the wireframes using Balsamiq. These initial designs made it easier to plan the overall design and structure of the webpage. Some elements of the final webpage are fairly different from these original wireframes.
-[Wireframes link] (assets/pdf/MSP2-wireframes.pdf)
+At the start of the project, I designed the wireframes using Balsamiq. These initial designs made it easier to plan the overall design and structure of the webpage. Some elements of the final webpage are different from these original wireframes.
+[Wireframes link] (assets/pdf/ms2-wireframes.pdf)
 ## **Features**
 ### Existing Features
 **Game Score Area**
--	The game score area that records the time taken and steps taken while flipping over the cards. The time starts as soon as the user clicks a card. The number of steps is recorded at each click. 
+-	The game score area records the time taken and steps taken while flipping over the cards. The time starts as soon as the user clicks a card. The number of steps is recorded at each click. 
 **Memory Game Grid Area**
 -	The game area where the matching of cards takes place. There are 16 cards within the grid each showing the compass back-face image, until the user clicks on a card to show a flag image. There are 8 pairs of flags in a random order to match. 
--	When all cards have been matched a modal window will pop-up to congratulate the user completing the game, displaying their score and allowing them to start again by clicking the restart button. 
+-	When all cards have been matched a modal window will pop-up to congratulate the user completing the game, displaying their score. 
 **Game Buttons Area**
--	The reset button is there to refresh the grid area, the timer and the number of steps, as well as reshuffling the cards. 
--	The how to play button allows a modal where a pop-up message is shown to the user containing information on game instructions. As well as a close button to remove the modal. 
+-	The restart button is there to refresh the grid area, the timer and the number of steps, as well as reshuffling the cards. 
+-	The how to play button shows a modal pop-up where a message is shown to the user containing information on game instructions. As well as a close button to remove the modal. 
+**Footer**
+-	There is an icon that has a link to GitHub, when clicked it will open a new tab to show the code for the webpage including the JavaScript code.
 ### Features Left to Include
 **Future features**
--	To allow users to have a choice between multiple difficulty levels where the number of card increase. 
+-	To allow users to have a choice between multiple difficulty levels where the number of cards increase. 
 -	To save game results on a scoreboard so users can compare their own scores to themselves or other users. 
 -	To create a flip animation where cards are flipped in a more fun way, to make it more pleasing for users.  
+-	To use a larger range of flag images for a more random array. 
 ## Technologies Used
 ### Languages
 -	HTML5
 -	CSS3
--	JacaScript
+-	JavaScript
 ###Frameworks, Libraries and Programmes
--	Bootstrap4
--	Fontawesome
--	Github
--	Gitpod
+-	Bootstrap5
+-	FontAwesome
+-	Gitub
+-	GitpPod
 -	Visual Studio Code
 -	Balsamiq
 -	Google Fonts
 -	Coolors 
 -             jQuery
+-            HTML Formatter
+-            CSS Formatter
+-           JShint
 #deployment
 ###deploy-to-github
-1. Log in to GitHub and locate the GitHub Repository. 
-2. At the top of the Repository (not top of page), locate the "Settings" button on the menu. 
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-[Link] ()
+1.	Login to GitHub and find the GitHub repository.
+2.	Click the settings button at the top of the repository menu.
+3.	locate "Pages" on the settings page which will be at the bottom of the menu.
+4.	Under the subheading "Source" there will be a dropdown menu stating "None", select "Main or Master Branch" and save.
+5.	The page will refresh automatically.
+6.	The link to the published site will appear at the top of the page.
 #testing
 ###testing-user-stories
 - Upon entering the site, users are automatically greeted with the memory game page.
--  The heading is large and readable and contrasts well with the background colour.
-- the game rules are easy to access, read and understand. 
+-  The heading is large and readable and contrasts well with the background colour. 
+- the game buttons are highlighted when clicked.
+- the rules pop-up window is easy to access, read and understand. 
 - the games timer and steps are readable and remain between the heading and the game grid. 
 - the matching of cards is simple and fun for users, it tests their memory skills.
 - there is a pop-up window after game is completed with users results so that they can play again to beat their score. 
-.
-
 ###Testing Usability of Webpage
--This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones.
+-This site is primarily for computers but uses Bootstrap to make the layout easier to design and accessible on iPads and phones by using media queries in the style.css file.
 - Viewport tag included in the head of HTML files to tell the browser how to respond to different resolutions, particularly mobile ones.
-
-- Media queries used in the CSS file to target larger devices.
-
+###validator-checks
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Code was entered through direct input.
 - [**HTML Validator**](https://validator.w3.org/nu/#textarea)
-
   One warning message received;
-
 > Warning: The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.
-    
 Code not altered as hyphens have been used to help structure my HTML code. Six hyphens used for headings with two for sub-headings.
-
 - [**CSS Validator**](https://jigsaw.w3.org/css-validator/#validate_by_input)
-
-  No error or warning messages received.
+ No error or warning messages received.
 ###additional-testing
 The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
-
-- The website was viewed on a variety of devices including Laptop, Macbook, Ipad and IPhones (Version 6,8).
-
+- The website was viewed on a variety of devices including desktops, Laptops, Mobile phones, iPads and iPhones.
 - Friends and family members were asked to review the site to point out any bugs, user experience issues and/or suggestions.
+- Project posted on Slack, asking for feedback from fellow students.
   - Feedback action:
     - 
 ###bugs
-
+-	The webpage did not come out responsive on devices smaller than 600px wide. Changes were mage to media queries to target the size of images and text areas to make them smaller but still readable on smaller devices.
 #credits
 ###content
-Bootstrap 4.5: Bootstrap Library used throughout the project, components used include the grid System, carousel, timeline and form templates.
-- [Code Institute's](https://codeinstitute.net/) 
-- [W3schools.com](https://www.w3schools.com/): 
+Bootstrap 5.1: Bootstrap Library used throughout the project, components used include the grid System, media queries, modals and buttons.
+- some JavaScript code was taken from  [Code Institute's](https://codeinstitute.net/) .
+- some JavaScript code and CSS styling was taken from [W3schools.com](https://www.w3schools.com/).
+- some JavaScript code was taken from [StackOverflow.com](https://stackoverflow.com/).
 
 ###media
-- hero image was taken from [freepik]( https://www.freepik.com)
-- The mock-up image provided at the top of the README.md was created using [About Am I Responsive](http://ami.responsivedesign.is/)
+- The card back-face image was taken from [pixabay.com](https://www.pixabay.com)
+- The flag image API was taken from [Flagpedia.net](https://flagpedia.net/download/api)
+- Footer icons were taken from [FontAwesome]( https://fontawesome.com/).
 #acknowledgements
 - My Mentor for continuous help and support throughout the project.
  - The [Code Institute](https://codeinstitute.net/) Slack Community.
-- A friend who has given me continuous support throughout the project.
+- A friend who has given me continuous help and advice throughout the project.
 #contact
 Created by @aneesakhan
-If you would like to contact me, please use the email below:
-Aneesa.khan97@gmail.com
-Thanks for visiting.
-Aneesa Khan
+Contact: Aneesa.khan97@gmail.com
