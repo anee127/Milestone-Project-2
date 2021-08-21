@@ -30,7 +30,6 @@ This webpage was created to launch a simple memory card game that people of all 
 + [Testing User Stories](#testing-user-stories)
 +[Testing Usability of Webpage](#testing-usability-of-webpage)
 + [Validator Checks](#validator-checks)
-+ [Responsive Design](#responsive-design)
 + [Additional Testing](#additional-testing)
 + [Bugs](#bugs) 
 
@@ -117,7 +116,7 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 -	[Coolors](https://coolors.co/)
 - [JQuery](https://jquery.com/)
 - [HTML Formatter](https://validator.w3.org/)
-- CSS Formatter](https://jigsaw.w3.org/css-validator/)
+- [CSS Formatter](https://jigsaw.w3.org/css-validator/)
 - [JShint](https://jshint.com/)
 
 # Deployment
