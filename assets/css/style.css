@@ -234,7 +234,7 @@ img {
  
 /* -------------------------------- Media Queries styling for responsivity on smaller devices */
 
-@media screen and (max-width: 480px) and (min-width:320px){
+@media screen and (max-width: 480px){
 
   .heading {
     font-size: 40px;
@@ -255,7 +255,6 @@ img {
     padding: 0;
   }
 
-
   .rules {
    left: 13%;
    top: 8%;
@@ -275,10 +274,13 @@ img {
     font-size: 20px;
   }
 
+  .card-area {
+    margin: 15px 15px;
+  }
 
   .card {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   /*.modal-end {
