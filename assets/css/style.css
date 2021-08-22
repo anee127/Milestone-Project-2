@@ -13,7 +13,7 @@ body {
   font-family: 'Smythe', sans-serif;
   }
 
-  /* -------------------------- Heading Area styling */
+  /* -------------------------- Heading area styling */
 
 .heading {
   font-weight: bold;
@@ -84,9 +84,9 @@ footer {
   letter-spacing: 2px;
 }
 
- /* ------------------------------------- How to Play rules modal Styling */
+ /* ------------------------------------- How to Play and End Game modal styling */
  
- .rules {
+ .rules, .modal-end {
    display: none;
    position: fixed;
    z-index: 99;
@@ -101,7 +101,7 @@ footer {
    background-color: #C9B892;
  }
 
- .modal-title {
+ .modal-title, .modal-header {
    font-size: 45px;
    font-weight: bolder;
    justify-content: center;
@@ -110,14 +110,18 @@ footer {
    word-spacing: 4px;
  }
 
- .text {
+ .text, .message {
    color: #391905;
    text-align: center;
    font-size: 30px;
   word-spacing: 4px;
  }
 
- .close-btn {
+ .bold {
+  font-weight: bolder;
+}
+
+ .close-btn, .restart-btn {
    margin: 5px;
    border: 0px;
    border-radius: 5px;
@@ -129,7 +133,7 @@ footer {
    word-spacing: 4px;
  }
 
- .close-btn:hover {
+ .close-btn:hover, .restart-btn:hover {
   border: 1px solid #E8DDC4;
   background: #E8DDC4;
   color: #391905;
@@ -176,63 +180,8 @@ img {
   height: auto;
   width: 100%;
 }
-
-/* -------------------------------------- End Game modal message styling */
-.modal-end {
-  display: none;
-   position: fixed;
-   z-index: 99;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   font-family: 'Smythe', sans-serif;
-   border: 0.2em solid ;
-   border-radius: 20px;
-   justify-content: center;
-   background-color: #C9B892;
-}
-
-.modal-header {
-  font-size: 45px;
-  font-weight: bolder;
-   justify-content: center;
-   color: #391905;
-   letter-spacing: 2px;
-   word-spacing: 4px;
-}
-
-.message {
-  padding: 0 20px;
-  color: #391905;
-   text-align: center;
-   font-size: 30px;
-  word-spacing: 4px;
-}
-
-.bold {
-  font-weight: bolder;
-}
-
-.restart-btn {
-  margin: 5px;
-  border: 0px;
-  border-radius: 5px;
-  background-color: #805029;
-  color: #fff;
-  font-size: 30px;
-  justify-content: center;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-}
-
-.restart-btn:hover {
-  border: 1px solid #E8DDC4;
-  background: #E8DDC4;
-  color: #391905;
-  transition: 0.3s;
-} 
  
-/* -------------------------------- Media Queries styling for responsivity on smaller devices */
+/* -------------------------------- Media Queries styling for responsiveness on smaller devices */
 
 @media screen and (max-width: 480px){
 
@@ -255,23 +204,23 @@ img {
     padding: 0;
   }
 
-  .rules {
+  .rules, .modal-end {
    left: 13%;
    top: 8%;
    transform: translate(-8%, -13%);
    border: 0.15rem solid #391905;
   }
 
-  .modal-title {
+  .modal-title, .modal-header {
     font-size: 25px;
   }
 
-  .text {
+  .text, .message {
     font-size: 20px;
   }
 
-  .close-btn {
-    margin: 0;
+  .close-btn, .restart-btn {
+    margin: 5px;
     font-size: 20px;
   }
 
@@ -286,20 +235,6 @@ img {
     border: 2px solid #391905;
   }
 
-  .modal-end {
-   left: 13%;
-   top: 8%;
-   transform: translate(-8%, -13%);
-   border: 0.15rem solid #391905;
-  }
-
-  .modal-header {
-    font-size: 25px;
-  }
-
-  .message {
-    font-size: 20px;
-  } 
 }
 
 /* @media screen and (max-width: 320px){
