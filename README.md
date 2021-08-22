@@ -118,6 +118,7 @@ At the start of the project, I designed the wireframes using Balsamiq. These ini
 - [HTML Formatter](https://validator.w3.org/)
 - [CSS Formatter](https://jigsaw.w3.org/css-validator/)
 - [JShint](https://jshint.com/)
+- [Webformatter](https://webformatter.com/)
 
 # Deployment
 ### Deploy To Github
