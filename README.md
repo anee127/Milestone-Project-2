@@ -28,7 +28,7 @@ This webpage was created to launch a simple memory card game that people of all 
 
 - [**Testing**](#testing)
 + [Testing User Stories](#testing-user-stories)
-+[Testing Usability of Webpage](#testing-usability-of-webpage)
++ [Testing Usability of Webpage](#testing-usability-of-webpage)
 + [Validator Checks](#validator-checks)
 + [Additional Testing](#additional-testing)
 + [Bugs](#bugs) 
