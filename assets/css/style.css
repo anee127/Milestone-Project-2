@@ -1,301 +1,244 @@
-@import url('https://fonts.googleapis.com/css2?family=Smythe&');
+@import url("https://fonts.googleapis.com/css2?family=Smythe&");
 
 * {
-  box-sizing: border-box;
-} 
+    box-sizing: border-box;
+}
 
 body {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-size-adjust: 20%;
-  background: #E8DDC4;
-  font-family: 'Smythe', sans-serif;
-  }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-size-adjust: 20%;
+    background: #e8ddc4;
+    font-family: "Smythe", sans-serif;
+}
 
-  /* -------------------------- Heading area styling */
+/* -------------------------- Heading area styling */
 
 .heading {
-  font-weight: bold;
-  font-size: 60px;
-  text-align: center;
-  position: relative;
-  color: #391905;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-}  
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    color: #391905;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
 
 /* -------------------------------- Footer area styling*/
 
 footer {
-  text-align: center;
-  font-size: 70px;
-  position: sticky;
-  color: #391905;
-  letter-spacing: 2px;
-  word-spacing: 4px;
+    text-align: center;
+    font-size: 70px;
+    position: sticky;
+    color: #391905;
+    letter-spacing: 2px;
+    word-spacing: 4px;
 }
 
 .fab {
- margin-top: 20px;
- color: #391905;
- font-size: 50px;
+    margin-top: 20px;
+    color: #391905;
+    font-size: 50px;
 }
 
 /* ----------------------------------- Game Score area styling*/
 
 .game-container {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 .game-area {
-  margin: auto;
-  padding: 0 10px;
-  font-size: 25px;
-  border: 1px solid #391905;
-  background-color: #805029;
-  color: #fff;
-  letter-spacing: 2px;
-  word-spacing: 5px;
+    margin: auto;
+    padding: 0 10px;
+    font-size: 25px;
+    border: 1px solid #391905;
+    background-color: #805029;
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 }
 
- /* -------------------------------------- Restart and How To Play button styling*/
+/* -------------------------------------- Restart and How To Play button styling*/
 
- .hero-btn {
-  width: 13rem;
-  height: 4rem;
-  font-family: 'Smythe', sans-serif;
-  display: inline-block;
-  color: #fff;
-  border: 1px solid #391905;
-  padding: 12px 34px;
-  font-size: 25px;
-  background: #805029;
-  position: relative;
-  transition: 1s;
-  letter-spacing: 2px;
+.hero-btn {
+    width: 13rem;
+    height: 4rem;
+    font-family: "Smythe", sans-serif;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #391905;
+    padding: 12px 34px;
+    font-size: 25px;
+    background: #805029;
+    position: relative;
+    transition: 1s;
+    letter-spacing: 2px;
 }
 
 .hero-btn:hover {
-  border: 1px solid #C9B892;
-  background: #C9B892;
-  color: #391905;
-  transition: 0.3s;
-  letter-spacing: 2px;
+    border: 1px solid #c9b892;
+    background: #c9b892;
+    color: #391905;
+    transition: 0.3s;
+    letter-spacing: 2px;
 }
 
- /* ------------------------------------- How to Play and End Game modal styling */
- 
- .rules, .modal-end {
-   display: none;
-   position: fixed;
-   z-index: 99;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   overflow-y: hidden;
-   font-family: 'Smythe', sans-serif;
-   border: 0.2em solid ;
-   border-radius: 20px;
-   justify-content: center;
-   background-color: #C9B892;
- }
+/* ------------------------------------- How to Play and End Game modal styling */
 
- .modal-title, .modal-header {
-   font-size: 45px;
-   font-weight: bolder;
-   justify-content: center;
-   color: #391905;
-   letter-spacing: 2px;
-   word-spacing: 4px;
- }
-
- .text, .message {
-   color: #391905;
-   text-align: center;
-   font-size: 30px;
-  word-spacing: 4px;
- }
-
- .bold {
-  font-weight: bolder;
+.rules,
+.modal-end {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: hidden;
+    font-family: "Smythe", sans-serif;
+    border: 0.2em solid;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: #c9b892;
 }
 
- .close-btn, .restart-btn {
-   margin: 5px;
-   border: 0px;
-   border-radius: 5px;
-   background-color: #805029;
-   color: #fff;
-   font-size: 30px;
-   justify-content: center;
-   letter-spacing: 2px;
-   word-spacing: 4px;
- }
+.modal-title,
+.modal-header {
+    font-size: 45px;
+    font-weight: bolder;
+    justify-content: center;
+    color: #391905;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
 
- .close-btn:hover, .restart-btn:hover {
-  border: 1px solid #E8DDC4;
-  background: #E8DDC4;
-  color: #391905;
-  transition: 0.3s;
+.text,
+.message {
+    color: #391905;
+    text-align: center;
+    font-size: 30px;
+    word-spacing: 4px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.close-btn,
+.restart-btn {
+    margin: 5px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #805029;
+    color: #fff;
+    font-size: 30px;
+    justify-content: center;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.close-btn:hover,
+.restart-btn:hover {
+    border: 1px solid #e8ddc4;
+    background: #e8ddc4;
+    color: #391905;
+    transition: 0.3s;
 }
 
 /* ------------------------------------------ Game Cards styling */
 
 .card-area {
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  justify-content: center;
-  perspective: 1000px;
-  
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    perspective: 1000px;
 }
 
 .card-image-hidden {
-  display: none;
+    display: none;
 }
 
 .card {
-  width: 100px;
-  height: 100px;
-  border: 3px solid #391905;
-  background-color: #C9B892;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #391905;
+    background-color: #c9b892;
 }
 
 .card-background {
-  background-image: url("https://cdn.pixabay.com/photo/2020/02/23/13/12/vintage-4873317_960_720.jpg");
-  background-size: cover;
-  background-position: left;
+    background-image: url("https://cdn.pixabay.com/photo/2020/02/23/13/12/vintage-4873317_960_720.jpg");
+    background-size: cover;
+    background-position: left;
 }
 
 .disabled {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 img {
-  object-position: center;
-  object-fit: cover;
-  margin-top:15%;
-  height: auto;
-  width: 100%;
+    object-position: center;
+    object-fit: cover;
+    margin-top: 15%;
+    height: auto;
+    width: 100%;
 }
- 
+
 /* -------------------------------- Media Queries styling for responsiveness on smaller devices */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 40px;
+    }
 
-  .heading {
-    font-size: 40px;
-  }
+    footer {
+        font-size: 25px;
+    }
 
-  footer {
-    font-size: 25px;
-  }
+    .game-area {
+        font-size: 20px;
+    }
 
-  .game-area {
-    font-size: 20px;
-  }
+    .hero-btn {
+        font-size: 20px;
+        width: 9rem;
+        height: 3rem;
+        padding: 0;
+    }
 
-  .hero-btn {
-    font-size: 20px;
-    width: 9rem;
-    height: 3rem;
-    padding: 0;
-  }
+    .rules,
+    .modal-end {
+        left: 13%;
+        top: 8%;
+        transform: translate(-8%, -13%);
+        border: 0.15rem solid #391905;
+    }
 
-  .rules, .modal-end {
-   left: 13%;
-   top: 8%;
-   transform: translate(-8%, -13%);
-   border: 0.15rem solid #391905;
-  }
+    .modal-title,
+    .modal-header {
+        font-size: 25px;
+    }
 
-  .modal-title, .modal-header {
-    font-size: 25px;
-  }
+    .text,
+    .message {
+        font-size: 20px;
+    }
 
-  .text, .message {
-    font-size: 20px;
-  }
+    .close-btn,
+    .restart-btn {
+        margin: 5px;
+        font-size: 20px;
+    }
 
-  .close-btn, .restart-btn {
-    margin: 5px;
-    font-size: 20px;
-  }
+    .card-area {
+        margin: 20px 20px;
+        grid-gap: 5px;
+    }
 
-  .card-area {
-    margin: 20px 20px;
-    grid-gap: 5px;
-  }
-
-  .card {
-    width: 70px;
-    height: 70px;
-    border: 2px solid #391905;
-  }
-
+    .card {
+        width: 70px;
+        height: 70px;
+        border: 2px solid #391905;
+    }
 }
-
-/* @media screen and (max-width: 320px){
-
-  .heading {
-    font-size: 60px;
-  }
-
-  .footer {
-    font-size: 50px;
-  }
-
-  .fab {
-    font-size: 30px;
-  }
-  
-  .game-area {
-    font-size: 20px;
-  }
-
-  .hero-btn {
-    width: 13rem;
-    height: 4rem;
-    font-size: 50%;
-  }
-
-  .card {
-    width: 60px;
-    height: 60px;
-  }
-  
-
-  img {
-    margin-top: 0;
-  }
-
-  .rules {
-   left: 12%;
-   top: 8%;
-   transform: translate(-8%, -12%);
-  }
-
-  .modal-title {
-    font-size: 20px;
-  }
-
-  .text {
-    font-size: 15px;
-  }
-
-  .modal-end {
-    left: 12%;
-   top: 8%;
-   transform: translate(-8%, -12%);
-  }
-
-  .modal-header {
-    font-size: 20px;
-  }
-
-  .message {
-    font-size: 15px;
-  }
-} */ 
