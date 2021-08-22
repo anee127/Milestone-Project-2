@@ -259,6 +259,7 @@ img {
    left: 13%;
    top: 8%;
    transform: translate(-8%, -13%);
+   border: 0.15rem solid #391905;
   }
 
   .modal-title {
@@ -275,18 +276,21 @@ img {
   }
 
   .card-area {
-    margin: 15px 15px;
+    margin: 20px 20px;
+    grid-gap: 5px;
   }
 
   .card {
     width: 70px;
     height: 70px;
+    border: 2px solid #391905;
   }
 
-  /*.modal-end {
-    left: 15%;
-   top: 10%;
-   transform: translate(-10%, -15%);
+  .modal-end {
+   left: 13%;
+   top: 8%;
+   transform: translate(-8%, -13%);
+   border: 0.15rem solid #391905;
   }
 
   .modal-header {
@@ -295,7 +299,7 @@ img {
 
   .message {
     font-size: 20px;
-  } */
+  } 
 }
 
 /* @media screen and (max-width: 320px){
