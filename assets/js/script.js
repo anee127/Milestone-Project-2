@@ -98,7 +98,10 @@ function matched() {
 
         document.getElementById("stepsResults").innerHTML = steps;
     }
+    openCards[0].parentElement.removeAttribute("onclick");
+    openCards[1].parentElement.removeAttribute("onclick");
     openCards = [];
+    
 }
 
 function unmatched() {
