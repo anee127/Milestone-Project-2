@@ -173,10 +173,6 @@ footer {
     background-position: left;
 }
 
-.disabled {
-    pointer-events: none;
-}
-
 img {
     object-position: center;
     object-fit: cover;

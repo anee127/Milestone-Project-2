@@ -63,19 +63,20 @@ function onCardClick(event) {
     if (steps == 0) {
         timerStart();
     }
+    event.target.removeAttribute("onclick");
+    event.target.removeEventListener("click", onCardClick);
     steps++;
     document.getElementById("stepsTaken").innerHTML = steps;
     let image = document.getElementById("image-" + event.target.id);
     image.classList.toggle("card-image-hidden");
-    image.classList.toggle("disabled");
     image.parentElement.classList.toggle("card-background");
+    openCards.push(image);
     cardOpen(image);
 }
 
 // Matching of cards Functions
 
 function cardOpen(image) {
-    openCards.push(image);
 
     if (openCards.length === 2) {
         if (openCards[0].src === openCards[1].src) {
@@ -98,8 +99,6 @@ function matched() {
 
         document.getElementById("stepsResults").innerHTML = steps;
     }
-    openCards[0].parentElement.removeAttribute("onclick");
-    openCards[1].parentElement.removeAttribute("onclick");
     openCards = [];
     
 }
@@ -111,10 +110,10 @@ function unmatched() {
     setTimeout(function () {
         firstCard.classList.toggle("card-image-hidden");
         secondCard.classList.toggle("card-image-hidden");
-        firstCard.classList.toggle("disabled");
-        secondCard.classList.toggle("disabled");
         firstCard.parentElement.classList.toggle("card-background");
         secondCard.parentElement.classList.toggle("card-background");
+        firstCard.parentElement.addEventListener("click", onCardClick);
+        secondCard.parentElement.addEventListener("click", onCardClick);
     }, 500);
 }
 
@@ -150,6 +149,7 @@ function closeRules() {
 
 function closeModal() {
     endGame.style.display = "none";
+    matchedCards = 0;
 }
 
 restartBtn.addEventListener("click", closeModal); // closes End Game modal
